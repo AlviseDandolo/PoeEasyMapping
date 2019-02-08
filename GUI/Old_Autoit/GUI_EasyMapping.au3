@@ -1,17 +1,52 @@
+#cs ----------------------------------------------------------------------------
+
+ AutoIt Version: 3.3.14.5
+ Author:         AlviDandee & Malve8
+
+#ce ----------------------------------------------------------------------------
+
 #include <ButtonConstants.au3>
 #include <ComboConstants.au3>
 #include <EditConstants.au3>
+#include <WindowsConstants.au3>
 #include <GUIConstantsEx.au3>
 #include <ListViewConstants.au3>
 #include <StaticConstants.au3>
 #include <TabConstants.au3>
 #include <WindowsConstants.au3>
-#Region ### START Koda GUI section ### Form=gui_easymapping.kxf
+
+; $MainWindow = GUICreate(, 512, 64, $WindowXPos, $WindowYPos, $WS_POPUP)
+; GUISetBkColor(0x000000)
+; WinSetOnTop($WIN_TITLE, "", $WINDOWS_ONTOP)
 
 ; Inizio GUI
-$Form1_1 = GUICreate("EasyMapping", 801, 601, 494, 332)
+$guioone = GUICreate("Main Gui", 800, 600, 100, 100, $WS_POPUP)
+
 GUISetIcon("..\Logo48x48.ico", -1)
-GUISetBkColor(0x151515)
+GUISetBkColor(0x4e5c76)
+
+$tab_settings = GUICtrlCreateButton("Settings", 10, 10, 80, 25)
+$chaos_set_tab = GUICtrlCreateButton("Chaos Set", 90, 10, 80, 25)
+$regal_set_tab = GUICtrlCreateButton("Regal Set", 170, 10, 80, 25)
+$set_counter_tab = GUICtrlCreateButton("Set Counter", 250, 10, 80, 25)
+$unique_tab = GUICtrlCreateButton("Unique", 330, 10, 80, 25)
+$card_tab = GUICtrlCreateButton("Div.Card", 410, 10, 80, 25)
+$bases_tab = GUICtrlCreateButton("Bases", 490, 10, 80, 25)
+
+$fake_tab = GUICtrlCreateGraphic(5, 34, 790, 1, $SS_BLACKRECT)
+GUICtrlSetColor($fake_tab, 0xFFFFFF) ;non funge ALVEEEEEEEE
+
+$ImportSettings = GUICtrlCreateGroup("Path Settings", 20, 40, 760, 217)
+$Label1 = GUICtrlCreateLabel("Compatible ONLY with Neversink's loot filter. You can download it at www.filterblade.xyz", 32, 56, 489, 19)
+GUICtrlCreateInput("...", 42, 85, 153, 21)
+$ImportLF = GUICtrlCreateButton("Browse...", 207, 83, 99, 25)
+
+
+
+GUISetState(@SW_SHOW)
+#comments-start
+
+
 $TabMenu = GUICtrlCreateTab(0, 0, 800, 560)
 $Settings = GUICtrlCreateTabItem("Settings")
 GUICtrlSetState(-1,$GUI_SHOW) ;Focus TAB
@@ -223,7 +258,7 @@ $Combo1 = GUICtrlCreateCombo("Default Profile", 30, 568, 145, 25, BitOR($CBS_DRO
 GUICtrlSetData(-1, "Profilo 1")
 $Button2 = GUICtrlCreateButton("+", 182, 567, 27, 23)
 GUISetState(@SW_SHOW)
-#EndRegion ### END Koda GUI section ###
+#comments-end
 
 While 1
 	$nMsg = GUIGetMsg()
