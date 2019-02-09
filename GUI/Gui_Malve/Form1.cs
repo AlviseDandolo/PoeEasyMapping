@@ -26,5 +26,30 @@ namespace Gui_Malve
         {
 
         }
+
+        private void rectangleShape2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rectangleShape3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flatButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
