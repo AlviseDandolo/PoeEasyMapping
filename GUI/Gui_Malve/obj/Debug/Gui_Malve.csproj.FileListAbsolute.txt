@@ -1,10 +1,12 @@
-C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Gui_Malve.exe.config
-C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Gui_Malve.exe
-C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Gui_Malve.pdb
-C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csprojAssemblyReference.cache
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.Form1.resources
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.Properties.Resources.resources
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csproj.GenerateResource.cache
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csproj.CoreCompileInputs.cache
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Gui_Malve.exe.config
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Gui_Malve.exe
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Gui_Malve.pdb
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csproj.CopyComplete
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.exe
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.pdb
-C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.Form1.resources

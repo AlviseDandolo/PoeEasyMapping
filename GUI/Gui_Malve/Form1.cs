@@ -51,5 +51,20 @@ namespace Gui_Malve
         {
 
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flatButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

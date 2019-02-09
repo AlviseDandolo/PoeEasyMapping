@@ -13,28 +13,19 @@ namespace Gui_Malve
     {
         public FlatButton()
         {
-            Initialize(Color.DodgerBlue, Color.White);
-        }
-        public FlatButton(Color newBackColor, Color newForeColor)
-        {
-            Initialize(newBackColor, newForeColor);
-        }
-
-        private void Initialize(Color newBackColor, Color newForeColor)
-        {
-            BackColor = newBackColor;
-            ForeColor = newForeColor;
-            CurrentBackColor = BackColor;
-        }
-
-        private Color backColor;
-        public override Color BackColor
-        {
-            get { return backColor; }
-            set { backColor = value; CurrentBackColor = backColor; Invalidate(); }
+            BackColor = Color.DodgerBlue;
+            ForeColor = Color.White;
+            NormalBackColor = BackColor;
         }
 
         private Color CurrentBackColor = Color.DodgerBlue;
+
+        private Color normalBackColor = Color.DodgerBlue;
+        public Color NormalBackColor
+        {
+            get { return normalBackColor; }
+            set { normalBackColor = value; CurrentBackColor = normalBackColor; BackColor = normalBackColor; Invalidate(); }
+        }
 
         private Color onHoverBackColor = Color.DarkOrchid;
         public Color OnHoverBackColor
