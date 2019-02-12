@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlphaLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FlatButton.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -52,6 +52,7 @@ namespace PoE_Easy_Mapping
             SetActiveTab(StylesTab);
 
             SampleOriginalBgImage = (Bitmap)SamplePicture.Image.Clone();
+            SampleText.Parent = SamplePicture;
 
             TabClicked += ClickedOnTab;
         }
@@ -142,7 +143,30 @@ namespace PoE_Easy_Mapping
 
         private void TrackBarAlpha_Scroll(object sender, EventArgs e)
         {
-            SamplePicture.Image = SetAlpha(SampleOriginalBgImage, TrackBarAlpha.Value);
+            //SamplePicture.Image = SetAlpha(SampleOriginalBgImage, TrackBarAlpha.Value);
+            SampleRect.BackColor = Color.FromArgb(TrackBarAlpha.Value, SampleRect.BackColor);
+            SampleText.BackColor = Color.FromArgb(TrackBarAlpha.Value, SampleRect.BackColor);
+            SampleText.ForeColor = Color.FromArgb(TrackBarAlpha.Value, SampleText.ForeColor);
+            SampleRect.BorderColor = Color.FromArgb(TrackBarAlpha.Value, SampleRect.BorderColor);
+
+        }
+
+        private void TrackBarSize_Scroll(object sender, EventArgs e)
+        {
+            // Rect height
+            SampleRect.Height = TrackBarSize.Value;
+            // Text height
+            SampleText.Font = new Font(SampleText.Font.FontFamily, (TrackBarSize.Value * 2 / 3), SampleText.Font.Style, SampleText.Font.Unit);
+            SampleText.Height = TrackBarSize.Value-4;
+            // Rect width
+            Debug.WriteLine(SampleText.WidthCoefficient);
+            SampleRect.Width = (int)(SampleText.WidthCoefficient * SampleText.Font.Size * 1.2f);
+            // Text width
+            SampleText.Width = SampleRect.Width - 4;
+
+
+            SampleRect.Location = new Point((SampleContent.Width - SampleRect.Width) / 2, (SampleContent.Height - SampleRect.Height) / 2);
+            SampleText.Location = new Point(SampleRect.Location.X + 2, SampleRect.Location.Y + 2);
         }
 
         private static void SetActiveTab(FlatTab tab)
