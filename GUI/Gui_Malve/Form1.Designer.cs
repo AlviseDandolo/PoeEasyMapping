@@ -52,6 +52,7 @@
             this.flatButton2 = new Gui_Malve.FlatButton();
             this.flatButton1 = new Gui_Malve.FlatButton();
             this.flatButton4 = new Gui_Malve.FlatButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // shapeContainer1
@@ -215,12 +216,23 @@
             this.flatButton4.UseVisualStyleBackColor = false;
             this.flatButton4.Click += new System.EventHandler(this.flatButton4_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(238, 116);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(527, 49);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(156)))), ((int)(((byte)(198)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.flatButton4);
             this.Controls.Add(this.flatButton3);
             this.Controls.Add(this.label2);
@@ -252,6 +264,7 @@
         private System.Windows.Forms.Label label2;
         private FlatButton flatButton3;
         private FlatButton flatButton4;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

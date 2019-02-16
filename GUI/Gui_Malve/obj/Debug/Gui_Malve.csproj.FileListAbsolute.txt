@@ -10,3 +10,4 @@ C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\bin\Debug\Microsoft.Visual
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csproj.CopyComplete
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.exe
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.pdb
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csprojAssemblyReference.cache
