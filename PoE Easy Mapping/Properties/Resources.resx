@@ -118,10 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ColorPicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColorPicker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fontin_SmallCaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fontin-SmallCaps.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="IconBeamBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBeamBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconBeamBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBeamBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconBeamGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBeamGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconBeamRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBeamRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconBeamWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBeamWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconBeamYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconBeamYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDiamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSphereBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSphereBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSphereBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSphereBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSphereGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSphereGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSphereRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSphereRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSphereWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSphereWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSphereYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSphereYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PoEGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PoEGround.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SocketSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SocketSample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

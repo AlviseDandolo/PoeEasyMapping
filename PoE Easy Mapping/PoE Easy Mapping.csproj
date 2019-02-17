@@ -52,6 +52,7 @@
     <Compile Include="AlphaLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ComboBoxItem.cs" />
     <Compile Include="FlatButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -66,6 +67,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Slider.Designer.cs">
+      <DependentUpon>Slider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticLibrary.cs" />
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +103,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PoEGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorPicker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SocketSample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconDiamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphereYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphereBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphereBrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphereGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphereRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconSphereWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBeamYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBeamBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBeamBrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBeamGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBeamRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconBeamWhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

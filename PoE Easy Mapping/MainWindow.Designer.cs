@@ -46,33 +46,112 @@ namespace PoE_Easy_Mapping
             this.TabsRectangleShape = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.TabContentContainer = new System.Windows.Forms.Panel();
             this.StylesContent = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.flatButton7 = new PoE_Easy_Mapping.FlatButton();
+            this.flatButton6 = new PoE_Easy_Mapping.FlatButton();
+            this.flatButton5 = new PoE_Easy_Mapping.FlatButton();
+            this.StyleList = new System.Windows.Forms.ListBox();
+            this.flatButton4 = new PoE_Easy_Mapping.FlatButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ThemeSelectBox = new System.Windows.Forms.ComboBox();
+            this.TextGroup = new System.Windows.Forms.GroupBox();
+            this.FontSizeLabel = new System.Windows.Forms.Label();
+            this.FontSizeTextBox = new System.Windows.Forms.NumericUpDown();
+            this.TrackBarFontSize = new PoE_Easy_Mapping.Slider();
+            this.FontColorLabel = new System.Windows.Forms.Label();
+            this.FontColor = new System.Windows.Forms.Panel();
+            this.FontColorHashtag = new PoE_Easy_Mapping.AlphaLabel();
+            this.FontColorTextBox = new System.Windows.Forms.TextBox();
+            this.SetTextColor1 = new PoE_Easy_Mapping.FlatButton();
+            this.SetTextColor2 = new PoE_Easy_Mapping.FlatButton();
+            this.SetTextColor3 = new PoE_Easy_Mapping.FlatButton();
+            this.SetTextColor4 = new PoE_Easy_Mapping.FlatButton();
+            this.SetTextColor5 = new PoE_Easy_Mapping.FlatButton();
+            this.SetTextColor6 = new PoE_Easy_Mapping.FlatButton();
+            this.SetTextColor7 = new PoE_Easy_Mapping.FlatButton();
+            this.TextColorPicker = new PoE_Easy_Mapping.FlatButton();
+            this.FontAlphaLabel = new System.Windows.Forms.Label();
+            this.FontAlphaTextBox = new System.Windows.Forms.NumericUpDown();
+            this.TrackBarFontAlpha = new PoE_Easy_Mapping.Slider();
+            this.BorderGroup = new System.Windows.Forms.GroupBox();
+            this.BorderColorLabel = new System.Windows.Forms.Label();
+            this.BorderColor = new System.Windows.Forms.Panel();
+            this.BorderColorHashtag = new PoE_Easy_Mapping.AlphaLabel();
+            this.BorderColorTextBox = new System.Windows.Forms.TextBox();
+            this.SetBorderColor1 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBorderColor2 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBorderColor3 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBorderColor4 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBorderColor5 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBorderColor6 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBorderColor7 = new PoE_Easy_Mapping.FlatButton();
+            this.BorderColorPicker = new PoE_Easy_Mapping.FlatButton();
+            this.BorderAlphaLabel = new System.Windows.Forms.Label();
+            this.BorderAlphaTextBox = new System.Windows.Forms.NumericUpDown();
+            this.TrackBarBorderAlpha = new PoE_Easy_Mapping.Slider();
+            this.BackgroundGroup = new System.Windows.Forms.GroupBox();
+            this.BackgroundColorLabel = new System.Windows.Forms.Label();
+            this.BackgroundColor = new System.Windows.Forms.Panel();
+            this.BackgroundColorHashtag = new PoE_Easy_Mapping.AlphaLabel();
+            this.BackgroundColorTextBox = new System.Windows.Forms.TextBox();
+            this.SetBackgroundColor1 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBackgroundColor2 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBackgroundColor3 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBackgroundColor4 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBackgroundColor5 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBackgroundColor6 = new PoE_Easy_Mapping.FlatButton();
+            this.SetBackgroundColor7 = new PoE_Easy_Mapping.FlatButton();
+            this.BackgroundColorPicker = new PoE_Easy_Mapping.FlatButton();
+            this.BackgroundAlphaLabel = new System.Windows.Forms.Label();
+            this.BackgroundAlphaTextBox = new System.Windows.Forms.NumericUpDown();
+            this.TrackBarBackgroundAlpha = new PoE_Easy_Mapping.Slider();
             this.SampleContent = new System.Windows.Forms.Panel();
+            this.SampleSockets = new System.Windows.Forms.PictureBox();
             this.SampleText = new PoE_Easy_Mapping.AlphaLabel();
             this.SampleRectContainer = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.SampleRect = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.SamplePicture = new System.Windows.Forms.PictureBox();
-            this.TrackBarAlpha = new System.Windows.Forms.TrackBar();
             this.SettingsContent = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.ReduceButton = new PoE_Easy_Mapping.FlatButton();
             this.CloseButton = new PoE_Easy_Mapping.FlatButton();
-            this.TrackBarSize = new System.Windows.Forms.TrackBar();
             this.MainWindowTitleBar.SuspendLayout();
             this.TrayMenuStrip.SuspendLayout();
             this.MainWindowContainer.SuspendLayout();
             this.TabsContainer.SuspendLayout();
             this.TabContentContainer.SuspendLayout();
             this.StylesContent.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.TextGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FontSizeTextBox)).BeginInit();
+            this.FontColor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FontAlphaTextBox)).BeginInit();
+            this.BorderGroup.SuspendLayout();
+            this.BorderColor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BorderAlphaTextBox)).BeginInit();
+            this.BackgroundGroup.SuspendLayout();
+            this.BackgroundColor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackgroundAlphaTextBox)).BeginInit();
             this.SampleContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SampleSockets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SamplePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBarAlpha)).BeginInit();
             this.SettingsContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBarSize)).BeginInit();
             this.SuspendLayout();
             // 
             // MainWindowTitleBar
             // 
-            this.MainWindowTitleBar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.MainWindowTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.MainWindowTitleBar.Controls.Add(this.MainWindowTitle);
             this.MainWindowTitleBar.Location = new System.Drawing.Point(0, 0);
             this.MainWindowTitleBar.Margin = new System.Windows.Forms.Padding(0);
@@ -146,7 +225,7 @@ namespace PoE_Easy_Mapping
             this.SettingsTab.ActiveBackColor = System.Drawing.Color.DodgerBlue;
             this.SettingsTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.SettingsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.SettingsTab.ForeColor = System.Drawing.Color.White;
+            this.SettingsTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.SettingsTab.Location = new System.Drawing.Point(10, 0);
             this.SettingsTab.Name = "SettingsTab";
             this.SettingsTab.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
@@ -163,7 +242,7 @@ namespace PoE_Easy_Mapping
             this.StylesTab.ActiveBackColor = System.Drawing.Color.DodgerBlue;
             this.StylesTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.StylesTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.StylesTab.ForeColor = System.Drawing.Color.White;
+            this.StylesTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.StylesTab.Location = new System.Drawing.Point(135, 0);
             this.StylesTab.Name = "StylesTab";
             this.StylesTab.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
@@ -171,7 +250,7 @@ namespace PoE_Easy_Mapping
             this.StylesTab.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.StylesTab.Size = new System.Drawing.Size(120, 35);
             this.StylesTab.TabIndex = 2;
-            this.StylesTab.Text = "Styles";
+            this.StylesTab.Text = "Themes";
             this.StylesTab.UseVisualStyleBackColor = false;
             this.StylesTab.Click += new System.EventHandler(this.StylesTab_Click);
             // 
@@ -209,9 +288,13 @@ namespace PoE_Easy_Mapping
             // StylesContent
             // 
             this.StylesContent.BackColor = System.Drawing.Color.Transparent;
-            this.StylesContent.Controls.Add(this.TrackBarSize);
+            this.StylesContent.Controls.Add(this.groupBox3);
+            this.StylesContent.Controls.Add(this.groupBox2);
+            this.StylesContent.Controls.Add(this.groupBox1);
+            this.StylesContent.Controls.Add(this.TextGroup);
+            this.StylesContent.Controls.Add(this.BorderGroup);
+            this.StylesContent.Controls.Add(this.BackgroundGroup);
             this.StylesContent.Controls.Add(this.SampleContent);
-            this.StylesContent.Controls.Add(this.TrackBarAlpha);
             this.StylesContent.Location = new System.Drawing.Point(0, 0);
             this.StylesContent.Margin = new System.Windows.Forms.Padding(0);
             this.StylesContent.Name = "StylesContent";
@@ -219,28 +302,1151 @@ namespace PoE_Easy_Mapping
             this.StylesContent.TabIndex = 0;
             this.StylesContent.Visible = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.pictureBox2);
+            this.groupBox3.Controls.Add(this.pictureBox1);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.groupBox3.Location = new System.Drawing.Point(411, 425);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(356, 57);
+            this.groupBox3.TabIndex = 29;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Other";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.DropDownWidth = 200;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sound 1",
+            "Sound 2",
+            "Sound 3"});
+            this.comboBox1.Location = new System.Drawing.Point(240, 21);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(106, 25);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::PoE_Easy_Mapping.Properties.Resources.IconBeamWhite;
+            this.pictureBox2.Location = new System.Drawing.Point(140, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::PoE_Easy_Mapping.Properties.Resources.IconSphereBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(90, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Beam:";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(176, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Sound:";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(6, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Icon:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.flatButton7);
+            this.groupBox2.Controls.Add(this.flatButton6);
+            this.groupBox2.Controls.Add(this.flatButton5);
+            this.groupBox2.Controls.Add(this.StyleList);
+            this.groupBox2.Controls.Add(this.flatButton4);
+            this.groupBox2.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.groupBox2.Location = new System.Drawing.Point(10, 70);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(392, 412);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Block list";
+            // 
+            // flatButton7
+            // 
+            this.flatButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton7.CurrentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatButton7.DisabledBackColor = System.Drawing.Color.Gray;
+            this.flatButton7.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flatButton7.ForeColor = System.Drawing.Color.White;
+            this.flatButton7.Location = new System.Drawing.Point(315, 129);
+            this.flatButton7.Name = "flatButton7";
+            this.flatButton7.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton7.OnClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton7.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.flatButton7.Size = new System.Drawing.Size(68, 25);
+            this.flatButton7.TabIndex = 32;
+            this.flatButton7.Text = "Paste";
+            this.flatButton7.UseVisualStyleBackColor = false;
+            // 
+            // flatButton6
+            // 
+            this.flatButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton6.CurrentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatButton6.DisabledBackColor = System.Drawing.Color.Gray;
+            this.flatButton6.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flatButton6.ForeColor = System.Drawing.Color.White;
+            this.flatButton6.Location = new System.Drawing.Point(315, 94);
+            this.flatButton6.Name = "flatButton6";
+            this.flatButton6.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton6.OnClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton6.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.flatButton6.Size = new System.Drawing.Size(68, 25);
+            this.flatButton6.TabIndex = 31;
+            this.flatButton6.Text = "Copy";
+            this.flatButton6.UseVisualStyleBackColor = false;
+            // 
+            // flatButton5
+            // 
+            this.flatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.flatButton5.CurrentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.flatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatButton5.DisabledBackColor = System.Drawing.Color.Gray;
+            this.flatButton5.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flatButton5.ForeColor = System.Drawing.Color.White;
+            this.flatButton5.Location = new System.Drawing.Point(315, 59);
+            this.flatButton5.Name = "flatButton5";
+            this.flatButton5.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.flatButton5.OnClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.flatButton5.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.flatButton5.Size = new System.Drawing.Size(68, 25);
+            this.flatButton5.TabIndex = 30;
+            this.flatButton5.Text = "Revert";
+            this.flatButton5.UseVisualStyleBackColor = false;
+            // 
+            // StyleList
+            // 
+            this.StyleList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.StyleList.FormattingEnabled = true;
+            this.StyleList.IntegralHeight = false;
+            this.StyleList.ItemHeight = 20;
+            this.StyleList.Location = new System.Drawing.Point(11, 24);
+            this.StyleList.Name = "StyleList";
+            this.StyleList.Size = new System.Drawing.Size(294, 377);
+            this.StyleList.TabIndex = 7;
+            this.StyleList.SelectedIndexChanged += new System.EventHandler(this.StyleList_SelectedIndexChanged);
+            // 
+            // flatButton4
+            // 
+            this.flatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton4.CurrentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatButton4.DisabledBackColor = System.Drawing.Color.Gray;
+            this.flatButton4.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flatButton4.ForeColor = System.Drawing.Color.White;
+            this.flatButton4.Location = new System.Drawing.Point(315, 24);
+            this.flatButton4.Name = "flatButton4";
+            this.flatButton4.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton4.OnClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.flatButton4.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.flatButton4.Size = new System.Drawing.Size(68, 25);
+            this.flatButton4.TabIndex = 29;
+            this.flatButton4.Text = "Save";
+            this.flatButton4.UseVisualStyleBackColor = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.ThemeSelectBox);
+            this.groupBox1.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.groupBox1.Location = new System.Drawing.Point(10, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(392, 62);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Theme";
+            // 
+            // ThemeSelectBox
+            // 
+            this.ThemeSelectBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ThemeSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ThemeSelectBox.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.ThemeSelectBox.FormattingEnabled = true;
+            this.ThemeSelectBox.Location = new System.Drawing.Point(11, 24);
+            this.ThemeSelectBox.Name = "ThemeSelectBox";
+            this.ThemeSelectBox.Size = new System.Drawing.Size(138, 25);
+            this.ThemeSelectBox.TabIndex = 8;
+            this.ThemeSelectBox.SelectedIndexChanged += new System.EventHandler(this.ThemeSelectBox_SelectedIndexChanged);
+            // 
+            // TextGroup
+            // 
+            this.TextGroup.Controls.Add(this.FontSizeLabel);
+            this.TextGroup.Controls.Add(this.FontSizeTextBox);
+            this.TextGroup.Controls.Add(this.TrackBarFontSize);
+            this.TextGroup.Controls.Add(this.FontColorLabel);
+            this.TextGroup.Controls.Add(this.FontColor);
+            this.TextGroup.Controls.Add(this.SetTextColor1);
+            this.TextGroup.Controls.Add(this.SetTextColor2);
+            this.TextGroup.Controls.Add(this.SetTextColor3);
+            this.TextGroup.Controls.Add(this.SetTextColor4);
+            this.TextGroup.Controls.Add(this.SetTextColor5);
+            this.TextGroup.Controls.Add(this.SetTextColor6);
+            this.TextGroup.Controls.Add(this.SetTextColor7);
+            this.TextGroup.Controls.Add(this.TextColorPicker);
+            this.TextGroup.Controls.Add(this.FontAlphaLabel);
+            this.TextGroup.Controls.Add(this.FontAlphaTextBox);
+            this.TextGroup.Controls.Add(this.TrackBarFontAlpha);
+            this.TextGroup.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextGroup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.TextGroup.Location = new System.Drawing.Point(411, 103);
+            this.TextGroup.Name = "TextGroup";
+            this.TextGroup.Size = new System.Drawing.Size(356, 122);
+            this.TextGroup.TabIndex = 12;
+            this.TextGroup.TabStop = false;
+            this.TextGroup.Text = "Text";
+            // 
+            // FontSizeLabel
+            // 
+            this.FontSizeLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.FontSizeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.FontSizeLabel.Location = new System.Drawing.Point(6, 24);
+            this.FontSizeLabel.Name = "FontSizeLabel";
+            this.FontSizeLabel.Size = new System.Drawing.Size(60, 20);
+            this.FontSizeLabel.TabIndex = 9;
+            this.FontSizeLabel.Text = "Size:";
+            // 
+            // FontSizeTextBox
+            // 
+            this.FontSizeTextBox.Location = new System.Drawing.Point(66, 21);
+            this.FontSizeTextBox.Maximum = new decimal(new int[] {
+            45,
+            0,
+            0,
+            0});
+            this.FontSizeTextBox.Minimum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.FontSizeTextBox.Name = "FontSizeTextBox";
+            this.FontSizeTextBox.Size = new System.Drawing.Size(70, 25);
+            this.FontSizeTextBox.TabIndex = 21;
+            this.FontSizeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.FontSizeTextBox.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.FontSizeTextBox.ValueChanged += new System.EventHandler(this.FontSizeTextBox_ValueChanged);
+            // 
+            // TrackBarFontSize
+            // 
+            this.TrackBarFontSize.BackColor = System.Drawing.Color.Transparent;
+            this.TrackBarFontSize.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.TrackBarFontSize.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
+            this.TrackBarFontSize.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+            this.TrackBarFontSize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrackBarFontSize.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarFontSize.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(130)))), ((int)(((byte)(208)))));
+            this.TrackBarFontSize.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
+            this.TrackBarFontSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.TrackBarFontSize.ForeColor = System.Drawing.Color.White;
+            this.TrackBarFontSize.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TrackBarFontSize.LargeChange = ((uint)(5u));
+            this.TrackBarFontSize.Location = new System.Drawing.Point(142, 24);
+            this.TrackBarFontSize.Maximum = 45;
+            this.TrackBarFontSize.Minimum = 18;
+            this.TrackBarFontSize.Name = "TrackBarFontSize";
+            this.TrackBarFontSize.ScaleDivisions = 10;
+            this.TrackBarFontSize.ScaleSubDivisions = 5;
+            this.TrackBarFontSize.ShowDivisionsText = false;
+            this.TrackBarFontSize.ShowSmallScale = false;
+            this.TrackBarFontSize.Size = new System.Drawing.Size(202, 20);
+            this.TrackBarFontSize.SmallChange = ((uint)(1u));
+            this.TrackBarFontSize.TabIndex = 5;
+            this.TrackBarFontSize.Text = "slider1";
+            this.TrackBarFontSize.ThumbInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarFontSize.ThumbPenColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarFontSize.ThumbRoundRectSize = new System.Drawing.Size(16, 16);
+            this.TrackBarFontSize.ThumbSize = new System.Drawing.Size(16, 16);
+            this.TrackBarFontSize.TickAdd = 0F;
+            this.TrackBarFontSize.TickColor = System.Drawing.Color.White;
+            this.TrackBarFontSize.TickDivide = 0F;
+            this.TrackBarFontSize.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.TrackBarFontSize.ValueChanged += new System.EventHandler(this.TrackBarFontSize_ValueChanged);
+            // 
+            // FontColorLabel
+            // 
+            this.FontColorLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.FontColorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.FontColorLabel.Location = new System.Drawing.Point(6, 55);
+            this.FontColorLabel.Name = "FontColorLabel";
+            this.FontColorLabel.Size = new System.Drawing.Size(60, 20);
+            this.FontColorLabel.TabIndex = 10;
+            this.FontColorLabel.Text = "Color:";
+            // 
+            // FontColor
+            // 
+            this.FontColor.BackColor = System.Drawing.Color.White;
+            this.FontColor.Controls.Add(this.FontColorHashtag);
+            this.FontColor.Controls.Add(this.FontColorTextBox);
+            this.FontColor.Location = new System.Drawing.Point(66, 52);
+            this.FontColor.Name = "FontColor";
+            this.FontColor.Size = new System.Drawing.Size(70, 25);
+            this.FontColor.TabIndex = 13;
+            // 
+            // FontColorHashtag
+            // 
+            this.FontColorHashtag.BackColor = System.Drawing.Color.White;
+            this.FontColorHashtag.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.FontColorHashtag.Location = new System.Drawing.Point(1, 1);
+            this.FontColorHashtag.Margin = new System.Windows.Forms.Padding(0);
+            this.FontColorHashtag.Name = "FontColorHashtag";
+            this.FontColorHashtag.Size = new System.Drawing.Size(14, 23);
+            this.FontColorHashtag.TabIndex = 23;
+            this.FontColorHashtag.Text = "#";
+            this.FontColorHashtag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // FontColorTextBox
+            // 
+            this.FontColorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FontColorTextBox.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FontColorTextBox.Location = new System.Drawing.Point(15, 4);
+            this.FontColorTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.FontColorTextBox.MaxLength = 6;
+            this.FontColorTextBox.Name = "FontColorTextBox";
+            this.FontColorTextBox.Size = new System.Drawing.Size(53, 18);
+            this.FontColorTextBox.TabIndex = 13;
+            this.FontColorTextBox.Text = "FFFFFF";
+            this.FontColorTextBox.TextChanged += new System.EventHandler(this.FontColorTextBox_TextChanged);
+            // 
+            // SetTextColor1
+            // 
+            this.SetTextColor1.BackColor = System.Drawing.Color.White;
+            this.SetTextColor1.CurrentBackColor = System.Drawing.Color.White;
+            this.SetTextColor1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor1.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor1.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor1.Location = new System.Drawing.Point(144, 52);
+            this.SetTextColor1.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor1.Name = "SetTextColor1";
+            this.SetTextColor1.NormalBackColor = System.Drawing.Color.White;
+            this.SetTextColor1.OnClickBackColor = System.Drawing.Color.White;
+            this.SetTextColor1.OnHoverBackColor = System.Drawing.Color.White;
+            this.SetTextColor1.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor1.TabIndex = 15;
+            this.SetTextColor1.UseVisualStyleBackColor = false;
+            this.SetTextColor1.Click += new System.EventHandler(this.SetTextColor1_Click);
+            // 
+            // SetTextColor2
+            // 
+            this.SetTextColor2.BackColor = System.Drawing.Color.Black;
+            this.SetTextColor2.CurrentBackColor = System.Drawing.Color.Black;
+            this.SetTextColor2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor2.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor2.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor2.Location = new System.Drawing.Point(170, 52);
+            this.SetTextColor2.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor2.Name = "SetTextColor2";
+            this.SetTextColor2.NormalBackColor = System.Drawing.Color.Black;
+            this.SetTextColor2.OnClickBackColor = System.Drawing.Color.Black;
+            this.SetTextColor2.OnHoverBackColor = System.Drawing.Color.Black;
+            this.SetTextColor2.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor2.TabIndex = 19;
+            this.SetTextColor2.UseVisualStyleBackColor = false;
+            this.SetTextColor2.Click += new System.EventHandler(this.SetTextColor2_Click);
+            // 
+            // SetTextColor3
+            // 
+            this.SetTextColor3.BackColor = System.Drawing.Color.DarkRed;
+            this.SetTextColor3.CurrentBackColor = System.Drawing.Color.DarkRed;
+            this.SetTextColor3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor3.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor3.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor3.Location = new System.Drawing.Point(196, 52);
+            this.SetTextColor3.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor3.Name = "SetTextColor3";
+            this.SetTextColor3.NormalBackColor = System.Drawing.Color.DarkRed;
+            this.SetTextColor3.OnClickBackColor = System.Drawing.Color.DarkRed;
+            this.SetTextColor3.OnHoverBackColor = System.Drawing.Color.DarkRed;
+            this.SetTextColor3.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor3.TabIndex = 16;
+            this.SetTextColor3.UseVisualStyleBackColor = false;
+            this.SetTextColor3.Click += new System.EventHandler(this.SetTextColor3_Click);
+            // 
+            // SetTextColor4
+            // 
+            this.SetTextColor4.BackColor = System.Drawing.Color.DarkGreen;
+            this.SetTextColor4.CurrentBackColor = System.Drawing.Color.DarkGreen;
+            this.SetTextColor4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor4.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor4.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor4.Location = new System.Drawing.Point(222, 52);
+            this.SetTextColor4.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor4.Name = "SetTextColor4";
+            this.SetTextColor4.NormalBackColor = System.Drawing.Color.DarkGreen;
+            this.SetTextColor4.OnClickBackColor = System.Drawing.Color.DarkGreen;
+            this.SetTextColor4.OnHoverBackColor = System.Drawing.Color.DarkGreen;
+            this.SetTextColor4.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor4.TabIndex = 17;
+            this.SetTextColor4.UseVisualStyleBackColor = false;
+            this.SetTextColor4.Click += new System.EventHandler(this.SetTextColor4_Click);
+            // 
+            // SetTextColor5
+            // 
+            this.SetTextColor5.BackColor = System.Drawing.Color.SteelBlue;
+            this.SetTextColor5.CurrentBackColor = System.Drawing.Color.SteelBlue;
+            this.SetTextColor5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor5.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor5.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor5.Location = new System.Drawing.Point(248, 52);
+            this.SetTextColor5.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor5.Name = "SetTextColor5";
+            this.SetTextColor5.NormalBackColor = System.Drawing.Color.SteelBlue;
+            this.SetTextColor5.OnClickBackColor = System.Drawing.Color.SteelBlue;
+            this.SetTextColor5.OnHoverBackColor = System.Drawing.Color.SteelBlue;
+            this.SetTextColor5.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor5.TabIndex = 18;
+            this.SetTextColor5.UseVisualStyleBackColor = false;
+            this.SetTextColor5.Click += new System.EventHandler(this.SetTextColor5_Click);
+            // 
+            // SetTextColor6
+            // 
+            this.SetTextColor6.BackColor = System.Drawing.Color.Goldenrod;
+            this.SetTextColor6.CurrentBackColor = System.Drawing.Color.Goldenrod;
+            this.SetTextColor6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor6.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor6.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor6.Location = new System.Drawing.Point(274, 52);
+            this.SetTextColor6.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor6.Name = "SetTextColor6";
+            this.SetTextColor6.NormalBackColor = System.Drawing.Color.Goldenrod;
+            this.SetTextColor6.OnClickBackColor = System.Drawing.Color.Goldenrod;
+            this.SetTextColor6.OnHoverBackColor = System.Drawing.Color.Goldenrod;
+            this.SetTextColor6.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor6.TabIndex = 23;
+            this.SetTextColor6.UseVisualStyleBackColor = false;
+            this.SetTextColor6.Click += new System.EventHandler(this.SetTextColor6_Click);
+            // 
+            // SetTextColor7
+            // 
+            this.SetTextColor7.BackColor = System.Drawing.Color.DimGray;
+            this.SetTextColor7.CurrentBackColor = System.Drawing.Color.DimGray;
+            this.SetTextColor7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetTextColor7.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetTextColor7.ForeColor = System.Drawing.Color.White;
+            this.SetTextColor7.Location = new System.Drawing.Point(299, 52);
+            this.SetTextColor7.Margin = new System.Windows.Forms.Padding(0);
+            this.SetTextColor7.Name = "SetTextColor7";
+            this.SetTextColor7.NormalBackColor = System.Drawing.Color.DimGray;
+            this.SetTextColor7.OnClickBackColor = System.Drawing.Color.DimGray;
+            this.SetTextColor7.OnHoverBackColor = System.Drawing.Color.DimGray;
+            this.SetTextColor7.Size = new System.Drawing.Size(20, 25);
+            this.SetTextColor7.TabIndex = 24;
+            this.SetTextColor7.UseVisualStyleBackColor = false;
+            this.SetTextColor7.Click += new System.EventHandler(this.SetTextColor7_Click);
+            // 
+            // TextColorPicker
+            // 
+            this.TextColorPicker.BackColor = System.Drawing.Color.Transparent;
+            this.TextColorPicker.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TextColorPicker.BackgroundImage")));
+            this.TextColorPicker.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TextColorPicker.CurrentBackColor = System.Drawing.Color.Transparent;
+            this.TextColorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextColorPicker.DisabledBackColor = System.Drawing.Color.Gray;
+            this.TextColorPicker.ForeColor = System.Drawing.Color.White;
+            this.TextColorPicker.Location = new System.Drawing.Point(325, 52);
+            this.TextColorPicker.Margin = new System.Windows.Forms.Padding(0);
+            this.TextColorPicker.Name = "TextColorPicker";
+            this.TextColorPicker.NormalBackColor = System.Drawing.Color.Transparent;
+            this.TextColorPicker.OnClickBackColor = System.Drawing.Color.Transparent;
+            this.TextColorPicker.OnHoverBackColor = System.Drawing.Color.Transparent;
+            this.TextColorPicker.Size = new System.Drawing.Size(20, 25);
+            this.TextColorPicker.TabIndex = 20;
+            this.TextColorPicker.UseVisualStyleBackColor = false;
+            this.TextColorPicker.Click += new System.EventHandler(this.TextColorPicker_Click);
+            // 
+            // FontAlphaLabel
+            // 
+            this.FontAlphaLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.FontAlphaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.FontAlphaLabel.Location = new System.Drawing.Point(6, 86);
+            this.FontAlphaLabel.Name = "FontAlphaLabel";
+            this.FontAlphaLabel.Size = new System.Drawing.Size(60, 20);
+            this.FontAlphaLabel.TabIndex = 11;
+            this.FontAlphaLabel.Text = "Alpha:";
+            // 
+            // FontAlphaTextBox
+            // 
+            this.FontAlphaTextBox.Location = new System.Drawing.Point(66, 83);
+            this.FontAlphaTextBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.FontAlphaTextBox.Name = "FontAlphaTextBox";
+            this.FontAlphaTextBox.Size = new System.Drawing.Size(70, 25);
+            this.FontAlphaTextBox.TabIndex = 22;
+            this.FontAlphaTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.FontAlphaTextBox.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.FontAlphaTextBox.ValueChanged += new System.EventHandler(this.FontAlphaTextBox_ValueChanged);
+            // 
+            // TrackBarFontAlpha
+            // 
+            this.TrackBarFontAlpha.BackColor = System.Drawing.Color.Transparent;
+            this.TrackBarFontAlpha.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.TrackBarFontAlpha.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
+            this.TrackBarFontAlpha.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+            this.TrackBarFontAlpha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrackBarFontAlpha.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarFontAlpha.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(130)))), ((int)(((byte)(208)))));
+            this.TrackBarFontAlpha.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
+            this.TrackBarFontAlpha.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.TrackBarFontAlpha.ForeColor = System.Drawing.Color.White;
+            this.TrackBarFontAlpha.LargeChange = ((uint)(5u));
+            this.TrackBarFontAlpha.Location = new System.Drawing.Point(142, 86);
+            this.TrackBarFontAlpha.Maximum = 255;
+            this.TrackBarFontAlpha.Name = "TrackBarFontAlpha";
+            this.TrackBarFontAlpha.ScaleDivisions = 10;
+            this.TrackBarFontAlpha.ScaleSubDivisions = 5;
+            this.TrackBarFontAlpha.ShowDivisionsText = true;
+            this.TrackBarFontAlpha.ShowSmallScale = false;
+            this.TrackBarFontAlpha.Size = new System.Drawing.Size(202, 20);
+            this.TrackBarFontAlpha.SmallChange = ((uint)(1u));
+            this.TrackBarFontAlpha.TabIndex = 6;
+            this.TrackBarFontAlpha.Text = "slider1";
+            this.TrackBarFontAlpha.ThumbInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarFontAlpha.ThumbPenColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarFontAlpha.ThumbRoundRectSize = new System.Drawing.Size(16, 16);
+            this.TrackBarFontAlpha.ThumbSize = new System.Drawing.Size(16, 16);
+            this.TrackBarFontAlpha.TickAdd = 0F;
+            this.TrackBarFontAlpha.TickColor = System.Drawing.Color.White;
+            this.TrackBarFontAlpha.TickDivide = 0F;
+            this.TrackBarFontAlpha.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.TrackBarFontAlpha.Value = 100;
+            this.TrackBarFontAlpha.ValueChanged += new System.EventHandler(this.TrackBarFontAlpha_ValueChanged);
+            // 
+            // BorderGroup
+            // 
+            this.BorderGroup.Controls.Add(this.BorderColorLabel);
+            this.BorderGroup.Controls.Add(this.BorderColor);
+            this.BorderGroup.Controls.Add(this.SetBorderColor1);
+            this.BorderGroup.Controls.Add(this.SetBorderColor2);
+            this.BorderGroup.Controls.Add(this.SetBorderColor3);
+            this.BorderGroup.Controls.Add(this.SetBorderColor4);
+            this.BorderGroup.Controls.Add(this.SetBorderColor5);
+            this.BorderGroup.Controls.Add(this.SetBorderColor6);
+            this.BorderGroup.Controls.Add(this.SetBorderColor7);
+            this.BorderGroup.Controls.Add(this.BorderColorPicker);
+            this.BorderGroup.Controls.Add(this.BorderAlphaLabel);
+            this.BorderGroup.Controls.Add(this.BorderAlphaTextBox);
+            this.BorderGroup.Controls.Add(this.TrackBarBorderAlpha);
+            this.BorderGroup.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorderGroup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.BorderGroup.Location = new System.Drawing.Point(411, 328);
+            this.BorderGroup.Name = "BorderGroup";
+            this.BorderGroup.Size = new System.Drawing.Size(356, 91);
+            this.BorderGroup.TabIndex = 25;
+            this.BorderGroup.TabStop = false;
+            this.BorderGroup.Text = "Border";
+            // 
+            // BorderColorLabel
+            // 
+            this.BorderColorLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.BorderColorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.BorderColorLabel.Location = new System.Drawing.Point(6, 24);
+            this.BorderColorLabel.Name = "BorderColorLabel";
+            this.BorderColorLabel.Size = new System.Drawing.Size(60, 20);
+            this.BorderColorLabel.TabIndex = 10;
+            this.BorderColorLabel.Text = "Color:";
+            // 
+            // BorderColor
+            // 
+            this.BorderColor.BackColor = System.Drawing.Color.White;
+            this.BorderColor.Controls.Add(this.BorderColorHashtag);
+            this.BorderColor.Controls.Add(this.BorderColorTextBox);
+            this.BorderColor.Location = new System.Drawing.Point(66, 21);
+            this.BorderColor.Name = "BorderColor";
+            this.BorderColor.Size = new System.Drawing.Size(70, 25);
+            this.BorderColor.TabIndex = 13;
+            // 
+            // BorderColorHashtag
+            // 
+            this.BorderColorHashtag.BackColor = System.Drawing.Color.White;
+            this.BorderColorHashtag.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.BorderColorHashtag.Location = new System.Drawing.Point(1, 1);
+            this.BorderColorHashtag.Margin = new System.Windows.Forms.Padding(0);
+            this.BorderColorHashtag.Name = "BorderColorHashtag";
+            this.BorderColorHashtag.Size = new System.Drawing.Size(14, 23);
+            this.BorderColorHashtag.TabIndex = 23;
+            this.BorderColorHashtag.Text = "#";
+            this.BorderColorHashtag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // BorderColorTextBox
+            // 
+            this.BorderColorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BorderColorTextBox.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorderColorTextBox.Location = new System.Drawing.Point(15, 4);
+            this.BorderColorTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.BorderColorTextBox.MaxLength = 6;
+            this.BorderColorTextBox.Name = "BorderColorTextBox";
+            this.BorderColorTextBox.Size = new System.Drawing.Size(53, 18);
+            this.BorderColorTextBox.TabIndex = 13;
+            this.BorderColorTextBox.Text = "FFFFFF";
+            this.BorderColorTextBox.TextChanged += new System.EventHandler(this.BorderColorTextBox_TextChanged);
+            // 
+            // SetBorderColor1
+            // 
+            this.SetBorderColor1.BackColor = System.Drawing.Color.White;
+            this.SetBorderColor1.CurrentBackColor = System.Drawing.Color.White;
+            this.SetBorderColor1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor1.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor1.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor1.Location = new System.Drawing.Point(144, 21);
+            this.SetBorderColor1.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor1.Name = "SetBorderColor1";
+            this.SetBorderColor1.NormalBackColor = System.Drawing.Color.White;
+            this.SetBorderColor1.OnClickBackColor = System.Drawing.Color.White;
+            this.SetBorderColor1.OnHoverBackColor = System.Drawing.Color.White;
+            this.SetBorderColor1.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor1.TabIndex = 15;
+            this.SetBorderColor1.UseVisualStyleBackColor = false;
+            this.SetBorderColor1.Click += new System.EventHandler(this.SetBorderColor1_Click);
+            // 
+            // SetBorderColor2
+            // 
+            this.SetBorderColor2.BackColor = System.Drawing.Color.Black;
+            this.SetBorderColor2.CurrentBackColor = System.Drawing.Color.Black;
+            this.SetBorderColor2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor2.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor2.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor2.Location = new System.Drawing.Point(170, 21);
+            this.SetBorderColor2.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor2.Name = "SetBorderColor2";
+            this.SetBorderColor2.NormalBackColor = System.Drawing.Color.Black;
+            this.SetBorderColor2.OnClickBackColor = System.Drawing.Color.Black;
+            this.SetBorderColor2.OnHoverBackColor = System.Drawing.Color.Black;
+            this.SetBorderColor2.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor2.TabIndex = 19;
+            this.SetBorderColor2.UseVisualStyleBackColor = false;
+            this.SetBorderColor2.Click += new System.EventHandler(this.SetBorderColor2_Click);
+            // 
+            // SetBorderColor3
+            // 
+            this.SetBorderColor3.BackColor = System.Drawing.Color.DarkRed;
+            this.SetBorderColor3.CurrentBackColor = System.Drawing.Color.DarkRed;
+            this.SetBorderColor3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor3.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor3.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor3.Location = new System.Drawing.Point(196, 21);
+            this.SetBorderColor3.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor3.Name = "SetBorderColor3";
+            this.SetBorderColor3.NormalBackColor = System.Drawing.Color.DarkRed;
+            this.SetBorderColor3.OnClickBackColor = System.Drawing.Color.DarkRed;
+            this.SetBorderColor3.OnHoverBackColor = System.Drawing.Color.DarkRed;
+            this.SetBorderColor3.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor3.TabIndex = 16;
+            this.SetBorderColor3.UseVisualStyleBackColor = false;
+            this.SetBorderColor3.Click += new System.EventHandler(this.SetBorderColor3_Click);
+            // 
+            // SetBorderColor4
+            // 
+            this.SetBorderColor4.BackColor = System.Drawing.Color.DarkGreen;
+            this.SetBorderColor4.CurrentBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBorderColor4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor4.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor4.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor4.Location = new System.Drawing.Point(222, 21);
+            this.SetBorderColor4.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor4.Name = "SetBorderColor4";
+            this.SetBorderColor4.NormalBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBorderColor4.OnClickBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBorderColor4.OnHoverBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBorderColor4.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor4.TabIndex = 17;
+            this.SetBorderColor4.UseVisualStyleBackColor = false;
+            this.SetBorderColor4.Click += new System.EventHandler(this.SetBorderColor4_Click);
+            // 
+            // SetBorderColor5
+            // 
+            this.SetBorderColor5.BackColor = System.Drawing.Color.SteelBlue;
+            this.SetBorderColor5.CurrentBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBorderColor5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor5.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor5.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor5.Location = new System.Drawing.Point(248, 21);
+            this.SetBorderColor5.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor5.Name = "SetBorderColor5";
+            this.SetBorderColor5.NormalBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBorderColor5.OnClickBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBorderColor5.OnHoverBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBorderColor5.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor5.TabIndex = 18;
+            this.SetBorderColor5.UseVisualStyleBackColor = false;
+            this.SetBorderColor5.Click += new System.EventHandler(this.SetBorderColor5_Click);
+            // 
+            // SetBorderColor6
+            // 
+            this.SetBorderColor6.BackColor = System.Drawing.Color.Goldenrod;
+            this.SetBorderColor6.CurrentBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBorderColor6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor6.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor6.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor6.Location = new System.Drawing.Point(274, 21);
+            this.SetBorderColor6.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor6.Name = "SetBorderColor6";
+            this.SetBorderColor6.NormalBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBorderColor6.OnClickBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBorderColor6.OnHoverBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBorderColor6.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor6.TabIndex = 23;
+            this.SetBorderColor6.UseVisualStyleBackColor = false;
+            this.SetBorderColor6.Click += new System.EventHandler(this.SetBorderColor6_Click);
+            // 
+            // SetBorderColor7
+            // 
+            this.SetBorderColor7.BackColor = System.Drawing.Color.DimGray;
+            this.SetBorderColor7.CurrentBackColor = System.Drawing.Color.DimGray;
+            this.SetBorderColor7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBorderColor7.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBorderColor7.ForeColor = System.Drawing.Color.White;
+            this.SetBorderColor7.Location = new System.Drawing.Point(299, 21);
+            this.SetBorderColor7.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBorderColor7.Name = "SetBorderColor7";
+            this.SetBorderColor7.NormalBackColor = System.Drawing.Color.DimGray;
+            this.SetBorderColor7.OnClickBackColor = System.Drawing.Color.DimGray;
+            this.SetBorderColor7.OnHoverBackColor = System.Drawing.Color.DimGray;
+            this.SetBorderColor7.Size = new System.Drawing.Size(20, 25);
+            this.SetBorderColor7.TabIndex = 24;
+            this.SetBorderColor7.UseVisualStyleBackColor = false;
+            this.SetBorderColor7.Click += new System.EventHandler(this.SetBorderColor7_Click);
+            // 
+            // BorderColorPicker
+            // 
+            this.BorderColorPicker.BackColor = System.Drawing.Color.Transparent;
+            this.BorderColorPicker.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BorderColorPicker.BackgroundImage")));
+            this.BorderColorPicker.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BorderColorPicker.CurrentBackColor = System.Drawing.Color.Transparent;
+            this.BorderColorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BorderColorPicker.DisabledBackColor = System.Drawing.Color.Gray;
+            this.BorderColorPicker.ForeColor = System.Drawing.Color.White;
+            this.BorderColorPicker.Location = new System.Drawing.Point(325, 21);
+            this.BorderColorPicker.Margin = new System.Windows.Forms.Padding(0);
+            this.BorderColorPicker.Name = "BorderColorPicker";
+            this.BorderColorPicker.NormalBackColor = System.Drawing.Color.Transparent;
+            this.BorderColorPicker.OnClickBackColor = System.Drawing.Color.Transparent;
+            this.BorderColorPicker.OnHoverBackColor = System.Drawing.Color.Transparent;
+            this.BorderColorPicker.Size = new System.Drawing.Size(20, 25);
+            this.BorderColorPicker.TabIndex = 20;
+            this.BorderColorPicker.UseVisualStyleBackColor = false;
+            this.BorderColorPicker.Click += new System.EventHandler(this.BorderColorPicker_Click);
+            // 
+            // BorderAlphaLabel
+            // 
+            this.BorderAlphaLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.BorderAlphaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.BorderAlphaLabel.Location = new System.Drawing.Point(6, 55);
+            this.BorderAlphaLabel.Name = "BorderAlphaLabel";
+            this.BorderAlphaLabel.Size = new System.Drawing.Size(60, 20);
+            this.BorderAlphaLabel.TabIndex = 11;
+            this.BorderAlphaLabel.Text = "Alpha:";
+            // 
+            // BorderAlphaTextBox
+            // 
+            this.BorderAlphaTextBox.Location = new System.Drawing.Point(66, 52);
+            this.BorderAlphaTextBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.BorderAlphaTextBox.Name = "BorderAlphaTextBox";
+            this.BorderAlphaTextBox.Size = new System.Drawing.Size(70, 25);
+            this.BorderAlphaTextBox.TabIndex = 22;
+            this.BorderAlphaTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BorderAlphaTextBox.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.BorderAlphaTextBox.ValueChanged += new System.EventHandler(this.BorderAlphaTextBox_ValueChanged);
+            // 
+            // TrackBarBorderAlpha
+            // 
+            this.TrackBarBorderAlpha.BackColor = System.Drawing.Color.Transparent;
+            this.TrackBarBorderAlpha.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.TrackBarBorderAlpha.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
+            this.TrackBarBorderAlpha.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+            this.TrackBarBorderAlpha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrackBarBorderAlpha.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarBorderAlpha.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(130)))), ((int)(((byte)(208)))));
+            this.TrackBarBorderAlpha.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
+            this.TrackBarBorderAlpha.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.TrackBarBorderAlpha.ForeColor = System.Drawing.Color.White;
+            this.TrackBarBorderAlpha.LargeChange = ((uint)(5u));
+            this.TrackBarBorderAlpha.Location = new System.Drawing.Point(142, 55);
+            this.TrackBarBorderAlpha.Maximum = 255;
+            this.TrackBarBorderAlpha.Name = "TrackBarBorderAlpha";
+            this.TrackBarBorderAlpha.ScaleDivisions = 10;
+            this.TrackBarBorderAlpha.ScaleSubDivisions = 5;
+            this.TrackBarBorderAlpha.ShowDivisionsText = true;
+            this.TrackBarBorderAlpha.ShowSmallScale = false;
+            this.TrackBarBorderAlpha.Size = new System.Drawing.Size(202, 20);
+            this.TrackBarBorderAlpha.SmallChange = ((uint)(1u));
+            this.TrackBarBorderAlpha.TabIndex = 6;
+            this.TrackBarBorderAlpha.Text = "slider1";
+            this.TrackBarBorderAlpha.ThumbInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarBorderAlpha.ThumbPenColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarBorderAlpha.ThumbRoundRectSize = new System.Drawing.Size(16, 16);
+            this.TrackBarBorderAlpha.ThumbSize = new System.Drawing.Size(16, 16);
+            this.TrackBarBorderAlpha.TickAdd = 0F;
+            this.TrackBarBorderAlpha.TickColor = System.Drawing.Color.White;
+            this.TrackBarBorderAlpha.TickDivide = 0F;
+            this.TrackBarBorderAlpha.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.TrackBarBorderAlpha.Value = 100;
+            this.TrackBarBorderAlpha.ValueChanged += new System.EventHandler(this.TrackBarBorderAlpha_ValueChanged);
+            // 
+            // BackgroundGroup
+            // 
+            this.BackgroundGroup.Controls.Add(this.BackgroundColorLabel);
+            this.BackgroundGroup.Controls.Add(this.BackgroundColor);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor1);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor2);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor3);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor4);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor5);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor6);
+            this.BackgroundGroup.Controls.Add(this.SetBackgroundColor7);
+            this.BackgroundGroup.Controls.Add(this.BackgroundColorPicker);
+            this.BackgroundGroup.Controls.Add(this.BackgroundAlphaLabel);
+            this.BackgroundGroup.Controls.Add(this.BackgroundAlphaTextBox);
+            this.BackgroundGroup.Controls.Add(this.TrackBarBackgroundAlpha);
+            this.BackgroundGroup.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackgroundGroup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.BackgroundGroup.Location = new System.Drawing.Point(411, 231);
+            this.BackgroundGroup.Name = "BackgroundGroup";
+            this.BackgroundGroup.Size = new System.Drawing.Size(356, 91);
+            this.BackgroundGroup.TabIndex = 26;
+            this.BackgroundGroup.TabStop = false;
+            this.BackgroundGroup.Text = "Background";
+            // 
+            // BackgroundColorLabel
+            // 
+            this.BackgroundColorLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.BackgroundColorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.BackgroundColorLabel.Location = new System.Drawing.Point(6, 24);
+            this.BackgroundColorLabel.Name = "BackgroundColorLabel";
+            this.BackgroundColorLabel.Size = new System.Drawing.Size(60, 20);
+            this.BackgroundColorLabel.TabIndex = 10;
+            this.BackgroundColorLabel.Text = "Color:";
+            // 
+            // BackgroundColor
+            // 
+            this.BackgroundColor.BackColor = System.Drawing.Color.White;
+            this.BackgroundColor.Controls.Add(this.BackgroundColorHashtag);
+            this.BackgroundColor.Controls.Add(this.BackgroundColorTextBox);
+            this.BackgroundColor.Location = new System.Drawing.Point(66, 21);
+            this.BackgroundColor.Name = "BackgroundColor";
+            this.BackgroundColor.Size = new System.Drawing.Size(70, 25);
+            this.BackgroundColor.TabIndex = 13;
+            // 
+            // BackgroundColorHashtag
+            // 
+            this.BackgroundColorHashtag.BackColor = System.Drawing.Color.White;
+            this.BackgroundColorHashtag.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.BackgroundColorHashtag.Location = new System.Drawing.Point(1, 1);
+            this.BackgroundColorHashtag.Margin = new System.Windows.Forms.Padding(0);
+            this.BackgroundColorHashtag.Name = "BackgroundColorHashtag";
+            this.BackgroundColorHashtag.Size = new System.Drawing.Size(14, 23);
+            this.BackgroundColorHashtag.TabIndex = 23;
+            this.BackgroundColorHashtag.Text = "#";
+            this.BackgroundColorHashtag.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // BackgroundColorTextBox
+            // 
+            this.BackgroundColorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BackgroundColorTextBox.Font = new System.Drawing.Font("Fontin SmallCaps", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackgroundColorTextBox.Location = new System.Drawing.Point(15, 4);
+            this.BackgroundColorTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.BackgroundColorTextBox.MaxLength = 6;
+            this.BackgroundColorTextBox.Name = "BackgroundColorTextBox";
+            this.BackgroundColorTextBox.Size = new System.Drawing.Size(53, 18);
+            this.BackgroundColorTextBox.TabIndex = 13;
+            this.BackgroundColorTextBox.Text = "FFFFFF";
+            this.BackgroundColorTextBox.TextChanged += new System.EventHandler(this.BackgroundColorTextBox_TextChanged);
+            // 
+            // SetBackgroundColor1
+            // 
+            this.SetBackgroundColor1.BackColor = System.Drawing.Color.White;
+            this.SetBackgroundColor1.CurrentBackColor = System.Drawing.Color.White;
+            this.SetBackgroundColor1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor1.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor1.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor1.Location = new System.Drawing.Point(144, 21);
+            this.SetBackgroundColor1.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor1.Name = "SetBackgroundColor1";
+            this.SetBackgroundColor1.NormalBackColor = System.Drawing.Color.White;
+            this.SetBackgroundColor1.OnClickBackColor = System.Drawing.Color.White;
+            this.SetBackgroundColor1.OnHoverBackColor = System.Drawing.Color.White;
+            this.SetBackgroundColor1.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor1.TabIndex = 15;
+            this.SetBackgroundColor1.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor1.Click += new System.EventHandler(this.SetBackgroundColor1_Click);
+            // 
+            // SetBackgroundColor2
+            // 
+            this.SetBackgroundColor2.BackColor = System.Drawing.Color.Black;
+            this.SetBackgroundColor2.CurrentBackColor = System.Drawing.Color.Black;
+            this.SetBackgroundColor2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor2.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor2.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor2.Location = new System.Drawing.Point(170, 21);
+            this.SetBackgroundColor2.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor2.Name = "SetBackgroundColor2";
+            this.SetBackgroundColor2.NormalBackColor = System.Drawing.Color.Black;
+            this.SetBackgroundColor2.OnClickBackColor = System.Drawing.Color.Black;
+            this.SetBackgroundColor2.OnHoverBackColor = System.Drawing.Color.Black;
+            this.SetBackgroundColor2.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor2.TabIndex = 19;
+            this.SetBackgroundColor2.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor2.Click += new System.EventHandler(this.SetBackgroundColor2_Click);
+            // 
+            // SetBackgroundColor3
+            // 
+            this.SetBackgroundColor3.BackColor = System.Drawing.Color.DarkRed;
+            this.SetBackgroundColor3.CurrentBackColor = System.Drawing.Color.DarkRed;
+            this.SetBackgroundColor3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor3.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor3.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor3.Location = new System.Drawing.Point(196, 21);
+            this.SetBackgroundColor3.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor3.Name = "SetBackgroundColor3";
+            this.SetBackgroundColor3.NormalBackColor = System.Drawing.Color.DarkRed;
+            this.SetBackgroundColor3.OnClickBackColor = System.Drawing.Color.DarkRed;
+            this.SetBackgroundColor3.OnHoverBackColor = System.Drawing.Color.DarkRed;
+            this.SetBackgroundColor3.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor3.TabIndex = 16;
+            this.SetBackgroundColor3.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor3.Click += new System.EventHandler(this.SetBackgroundColor3_Click);
+            // 
+            // SetBackgroundColor4
+            // 
+            this.SetBackgroundColor4.BackColor = System.Drawing.Color.DarkGreen;
+            this.SetBackgroundColor4.CurrentBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBackgroundColor4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor4.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor4.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor4.Location = new System.Drawing.Point(222, 21);
+            this.SetBackgroundColor4.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor4.Name = "SetBackgroundColor4";
+            this.SetBackgroundColor4.NormalBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBackgroundColor4.OnClickBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBackgroundColor4.OnHoverBackColor = System.Drawing.Color.DarkGreen;
+            this.SetBackgroundColor4.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor4.TabIndex = 17;
+            this.SetBackgroundColor4.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor4.Click += new System.EventHandler(this.SetBackgroundColor4_Click);
+            // 
+            // SetBackgroundColor5
+            // 
+            this.SetBackgroundColor5.BackColor = System.Drawing.Color.SteelBlue;
+            this.SetBackgroundColor5.CurrentBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBackgroundColor5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor5.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor5.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor5.Location = new System.Drawing.Point(248, 21);
+            this.SetBackgroundColor5.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor5.Name = "SetBackgroundColor5";
+            this.SetBackgroundColor5.NormalBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBackgroundColor5.OnClickBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBackgroundColor5.OnHoverBackColor = System.Drawing.Color.SteelBlue;
+            this.SetBackgroundColor5.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor5.TabIndex = 18;
+            this.SetBackgroundColor5.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor5.Click += new System.EventHandler(this.SetBackgroundColor5_Click);
+            // 
+            // SetBackgroundColor6
+            // 
+            this.SetBackgroundColor6.BackColor = System.Drawing.Color.Goldenrod;
+            this.SetBackgroundColor6.CurrentBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBackgroundColor6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor6.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor6.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor6.Location = new System.Drawing.Point(274, 21);
+            this.SetBackgroundColor6.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor6.Name = "SetBackgroundColor6";
+            this.SetBackgroundColor6.NormalBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBackgroundColor6.OnClickBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBackgroundColor6.OnHoverBackColor = System.Drawing.Color.Goldenrod;
+            this.SetBackgroundColor6.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor6.TabIndex = 23;
+            this.SetBackgroundColor6.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor6.Click += new System.EventHandler(this.SetBackgroundColor6_Click);
+            // 
+            // SetBackgroundColor7
+            // 
+            this.SetBackgroundColor7.BackColor = System.Drawing.Color.DimGray;
+            this.SetBackgroundColor7.CurrentBackColor = System.Drawing.Color.DimGray;
+            this.SetBackgroundColor7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SetBackgroundColor7.DisabledBackColor = System.Drawing.Color.Gray;
+            this.SetBackgroundColor7.ForeColor = System.Drawing.Color.White;
+            this.SetBackgroundColor7.Location = new System.Drawing.Point(299, 21);
+            this.SetBackgroundColor7.Margin = new System.Windows.Forms.Padding(0);
+            this.SetBackgroundColor7.Name = "SetBackgroundColor7";
+            this.SetBackgroundColor7.NormalBackColor = System.Drawing.Color.DimGray;
+            this.SetBackgroundColor7.OnClickBackColor = System.Drawing.Color.DimGray;
+            this.SetBackgroundColor7.OnHoverBackColor = System.Drawing.Color.DimGray;
+            this.SetBackgroundColor7.Size = new System.Drawing.Size(20, 25);
+            this.SetBackgroundColor7.TabIndex = 24;
+            this.SetBackgroundColor7.UseVisualStyleBackColor = false;
+            this.SetBackgroundColor7.Click += new System.EventHandler(this.SetBackgroundColor7_Click);
+            // 
+            // BackgroundColorPicker
+            // 
+            this.BackgroundColorPicker.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundColorPicker.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BackgroundColorPicker.BackgroundImage")));
+            this.BackgroundColorPicker.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundColorPicker.CurrentBackColor = System.Drawing.Color.Transparent;
+            this.BackgroundColorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackgroundColorPicker.DisabledBackColor = System.Drawing.Color.Gray;
+            this.BackgroundColorPicker.ForeColor = System.Drawing.Color.White;
+            this.BackgroundColorPicker.Location = new System.Drawing.Point(325, 21);
+            this.BackgroundColorPicker.Margin = new System.Windows.Forms.Padding(0);
+            this.BackgroundColorPicker.Name = "BackgroundColorPicker";
+            this.BackgroundColorPicker.NormalBackColor = System.Drawing.Color.Transparent;
+            this.BackgroundColorPicker.OnClickBackColor = System.Drawing.Color.Transparent;
+            this.BackgroundColorPicker.OnHoverBackColor = System.Drawing.Color.Transparent;
+            this.BackgroundColorPicker.Size = new System.Drawing.Size(20, 25);
+            this.BackgroundColorPicker.TabIndex = 20;
+            this.BackgroundColorPicker.UseVisualStyleBackColor = false;
+            this.BackgroundColorPicker.Click += new System.EventHandler(this.BackgroundColorPicker_Click);
+            // 
+            // BackgroundAlphaLabel
+            // 
+            this.BackgroundAlphaLabel.Font = new System.Drawing.Font("Fontin SmallCaps", 12F);
+            this.BackgroundAlphaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.BackgroundAlphaLabel.Location = new System.Drawing.Point(6, 55);
+            this.BackgroundAlphaLabel.Name = "BackgroundAlphaLabel";
+            this.BackgroundAlphaLabel.Size = new System.Drawing.Size(60, 20);
+            this.BackgroundAlphaLabel.TabIndex = 11;
+            this.BackgroundAlphaLabel.Text = "Alpha:";
+            // 
+            // BackgroundAlphaTextBox
+            // 
+            this.BackgroundAlphaTextBox.Location = new System.Drawing.Point(66, 52);
+            this.BackgroundAlphaTextBox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.BackgroundAlphaTextBox.Name = "BackgroundAlphaTextBox";
+            this.BackgroundAlphaTextBox.Size = new System.Drawing.Size(70, 25);
+            this.BackgroundAlphaTextBox.TabIndex = 22;
+            this.BackgroundAlphaTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BackgroundAlphaTextBox.Value = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.BackgroundAlphaTextBox.ValueChanged += new System.EventHandler(this.BackgroundAlphaTextBox_ValueChanged);
+            // 
+            // TrackBarBackgroundAlpha
+            // 
+            this.TrackBarBackgroundAlpha.BackColor = System.Drawing.Color.Transparent;
+            this.TrackBarBackgroundAlpha.BarPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.TrackBarBackgroundAlpha.BarPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(74)))));
+            this.TrackBarBackgroundAlpha.BorderRoundRectSize = new System.Drawing.Size(8, 8);
+            this.TrackBarBackgroundAlpha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrackBarBackgroundAlpha.ElapsedInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarBackgroundAlpha.ElapsedPenColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(130)))), ((int)(((byte)(208)))));
+            this.TrackBarBackgroundAlpha.ElapsedPenColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
+            this.TrackBarBackgroundAlpha.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            this.TrackBarBackgroundAlpha.ForeColor = System.Drawing.Color.White;
+            this.TrackBarBackgroundAlpha.LargeChange = ((uint)(5u));
+            this.TrackBarBackgroundAlpha.Location = new System.Drawing.Point(142, 55);
+            this.TrackBarBackgroundAlpha.Maximum = 255;
+            this.TrackBarBackgroundAlpha.Name = "TrackBarBackgroundAlpha";
+            this.TrackBarBackgroundAlpha.ScaleDivisions = 10;
+            this.TrackBarBackgroundAlpha.ScaleSubDivisions = 5;
+            this.TrackBarBackgroundAlpha.ShowDivisionsText = true;
+            this.TrackBarBackgroundAlpha.ShowSmallScale = false;
+            this.TrackBarBackgroundAlpha.Size = new System.Drawing.Size(202, 20);
+            this.TrackBarBackgroundAlpha.SmallChange = ((uint)(1u));
+            this.TrackBarBackgroundAlpha.TabIndex = 6;
+            this.TrackBarBackgroundAlpha.Text = "slider1";
+            this.TrackBarBackgroundAlpha.ThumbInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarBackgroundAlpha.ThumbPenColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(56)))), ((int)(((byte)(152)))));
+            this.TrackBarBackgroundAlpha.ThumbRoundRectSize = new System.Drawing.Size(16, 16);
+            this.TrackBarBackgroundAlpha.ThumbSize = new System.Drawing.Size(16, 16);
+            this.TrackBarBackgroundAlpha.TickAdd = 0F;
+            this.TrackBarBackgroundAlpha.TickColor = System.Drawing.Color.White;
+            this.TrackBarBackgroundAlpha.TickDivide = 0F;
+            this.TrackBarBackgroundAlpha.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.TrackBarBackgroundAlpha.Value = 100;
+            this.TrackBarBackgroundAlpha.ValueChanged += new System.EventHandler(this.TrackBarBackgroundAlpha_ValueChanged);
+            // 
             // SampleContent
             // 
+            this.SampleContent.Controls.Add(this.SampleSockets);
             this.SampleContent.Controls.Add(this.SampleText);
             this.SampleContent.Controls.Add(this.SampleRectContainer);
             this.SampleContent.Controls.Add(this.SamplePicture);
-            this.SampleContent.Location = new System.Drawing.Point(343, 6);
+            this.SampleContent.Location = new System.Drawing.Point(411, 10);
             this.SampleContent.Name = "SampleContent";
-            this.SampleContent.Size = new System.Drawing.Size(430, 150);
+            this.SampleContent.Size = new System.Drawing.Size(356, 87);
             this.SampleContent.TabIndex = 3;
+            // 
+            // SampleSockets
+            // 
+            this.SampleSockets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SampleSockets.Image = global::PoE_Easy_Mapping.Properties.Resources.SocketSample;
+            this.SampleSockets.InitialImage = global::PoE_Easy_Mapping.Properties.Resources.SocketSample;
+            this.SampleSockets.Location = new System.Drawing.Point(325, 67);
+            this.SampleSockets.Name = "SampleSockets";
+            this.SampleSockets.Size = new System.Drawing.Size(16, 16);
+            this.SampleSockets.TabIndex = 5;
+            this.SampleSockets.TabStop = false;
+            this.SampleSockets.Visible = false;
             // 
             // SampleText
             // 
             this.SampleText.BackColor = System.Drawing.Color.SteelBlue;
             this.SampleText.Font = new System.Drawing.Font("Fontin SmallCaps", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.SampleText.ForeColor = System.Drawing.Color.White;
-            this.SampleText.Location = new System.Drawing.Point(42, 47);
+            this.SampleText.Location = new System.Drawing.Point(30, 23);
             this.SampleText.Margin = new System.Windows.Forms.Padding(0);
             this.SampleText.Name = "SampleText";
-            this.SampleText.Size = new System.Drawing.Size(346, 56);
+            this.SampleText.Size = new System.Drawing.Size(296, 41);
             this.SampleText.TabIndex = 4;
-            this.SampleText.Text = "Exalted Orb";
-            this.SampleText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SampleText.Text = "Scroll of Wisdom";
+            this.SampleText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SampleRectContainer
             // 
@@ -249,7 +1455,7 @@ namespace PoE_Easy_Mapping
             this.SampleRectContainer.Name = "SampleRectContainer";
             this.SampleRectContainer.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.SampleRect});
-            this.SampleRectContainer.Size = new System.Drawing.Size(430, 150);
+            this.SampleRectContainer.Size = new System.Drawing.Size(356, 87);
             this.SampleRectContainer.TabIndex = 2;
             this.SampleRectContainer.TabStop = false;
             // 
@@ -262,9 +1468,9 @@ namespace PoE_Easy_Mapping
             this.SampleRect.BorderColor = System.Drawing.Color.Red;
             this.SampleRect.Enabled = false;
             this.SampleRect.FillColor = System.Drawing.Color.Transparent;
-            this.SampleRect.Location = new System.Drawing.Point(40, 45);
+            this.SampleRect.Location = new System.Drawing.Point(8, 21);
             this.SampleRect.Name = "SampleRect";
-            this.SampleRect.Size = new System.Drawing.Size(350, 60);
+            this.SampleRect.Size = new System.Drawing.Size(339, 45);
             // 
             // SamplePicture
             // 
@@ -276,17 +1482,6 @@ namespace PoE_Easy_Mapping
             this.SamplePicture.Size = new System.Drawing.Size(430, 150);
             this.SamplePicture.TabIndex = 0;
             this.SamplePicture.TabStop = false;
-            // 
-            // TrackBarAlpha
-            // 
-            this.TrackBarAlpha.LargeChange = 17;
-            this.TrackBarAlpha.Location = new System.Drawing.Point(183, 429);
-            this.TrackBarAlpha.Margin = new System.Windows.Forms.Padding(0);
-            this.TrackBarAlpha.Maximum = 255;
-            this.TrackBarAlpha.Name = "TrackBarAlpha";
-            this.TrackBarAlpha.Size = new System.Drawing.Size(429, 45);
-            this.TrackBarAlpha.TabIndex = 1;
-            this.TrackBarAlpha.Scroll += new System.EventHandler(this.TrackBarAlpha_Scroll);
             // 
             // SettingsContent
             // 
@@ -311,6 +1506,8 @@ namespace PoE_Easy_Mapping
             // ReduceButton
             // 
             this.ReduceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(120)))));
+            this.ReduceButton.CurrentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(120)))));
+            this.ReduceButton.DisabledBackColor = System.Drawing.Color.Gray;
             this.ReduceButton.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10F);
             this.ReduceButton.ForeColor = System.Drawing.Color.White;
             this.ReduceButton.Location = new System.Drawing.Point(704, 0);
@@ -327,6 +1524,8 @@ namespace PoE_Easy_Mapping
             // CloseButton
             // 
             this.CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CloseButton.CurrentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CloseButton.DisabledBackColor = System.Drawing.Color.Gray;
             this.CloseButton.Font = new System.Drawing.Font("Copperplate Gothic Bold", 10F);
             this.CloseButton.ForeColor = System.Drawing.Color.White;
             this.CloseButton.Location = new System.Drawing.Point(752, 0);
@@ -339,19 +1538,6 @@ namespace PoE_Easy_Mapping
             this.CloseButton.Text = "X";
             this.CloseButton.UseVisualStyleBackColor = false;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-            // 
-            // TrackBarSize
-            // 
-            this.TrackBarSize.LargeChange = 4;
-            this.TrackBarSize.Location = new System.Drawing.Point(183, 363);
-            this.TrackBarSize.Margin = new System.Windows.Forms.Padding(0);
-            this.TrackBarSize.Maximum = 45;
-            this.TrackBarSize.Minimum = 18;
-            this.TrackBarSize.Name = "TrackBarSize";
-            this.TrackBarSize.Size = new System.Drawing.Size(429, 45);
-            this.TrackBarSize.TabIndex = 4;
-            this.TrackBarSize.Value = 18;
-            this.TrackBarSize.Scroll += new System.EventHandler(this.TrackBarSize_Scroll);
             // 
             // MainWindow
             // 
@@ -375,13 +1561,29 @@ namespace PoE_Easy_Mapping
             this.TabsContainer.ResumeLayout(false);
             this.TabContentContainer.ResumeLayout(false);
             this.StylesContent.ResumeLayout(false);
-            this.StylesContent.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.TextGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FontSizeTextBox)).EndInit();
+            this.FontColor.ResumeLayout(false);
+            this.FontColor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.FontAlphaTextBox)).EndInit();
+            this.BorderGroup.ResumeLayout(false);
+            this.BorderColor.ResumeLayout(false);
+            this.BorderColor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BorderAlphaTextBox)).EndInit();
+            this.BackgroundGroup.ResumeLayout(false);
+            this.BackgroundColor.ResumeLayout(false);
+            this.BackgroundColor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackgroundAlphaTextBox)).EndInit();
             this.SampleContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SampleSockets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SamplePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBarAlpha)).EndInit();
             this.SettingsContent.ResumeLayout(false);
             this.SettingsContent.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBarSize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -390,12 +1592,15 @@ namespace PoE_Easy_Mapping
 
         private void NormalizeFont()
         {
-            this.MainWindowTitle.Font = new Font(Pfc.Families[0], this.MainWindowTitle.Font.Size, this.MainWindowTitle.Font.Style, this.MainWindowTitle.Font.Unit);
-            this.ReduceButton.Font = new Font(Pfc.Families[0], this.ReduceButton.Font.Size, this.ReduceButton.Font.Style, this.ReduceButton.Font.Unit);
-            this.CloseButton.Font = new Font(Pfc.Families[0], this.CloseButton.Font.Size, this.CloseButton.Font.Style, this.CloseButton.Font.Unit);
-            this.SettingsTab.Font = new Font(Pfc.Families[0], this.SettingsTab.Font.Size, this.SettingsTab.Font.Style, this.SettingsTab.Font.Unit);
-            this.StylesTab.Font = new Font(Pfc.Families[0], this.StylesTab.Font.Size, this.StylesTab.Font.Style, this.StylesTab.Font.Unit);
-            this.SampleText.Font = new Font(Pfc.Families[0], this.SampleText.Font.Size, this.SampleText.Font.Style, this.SampleText.Font.Unit );
+            this.MainWindowTitle.Font = new Font(StaticLibrary.GetMainFont(), this.MainWindowTitle.Font.Size, this.MainWindowTitle.Font.Style, this.MainWindowTitle.Font.Unit);
+            this.ReduceButton.Font = new Font(StaticLibrary.GetMainFont(), this.ReduceButton.Font.Size, this.ReduceButton.Font.Style, this.ReduceButton.Font.Unit);
+            this.CloseButton.Font = new Font(StaticLibrary.GetMainFont(), this.CloseButton.Font.Size, this.CloseButton.Font.Style, this.CloseButton.Font.Unit);
+            this.SettingsTab.Font = new Font(StaticLibrary.GetMainFont(), this.SettingsTab.Font.Size, this.SettingsTab.Font.Style, this.SettingsTab.Font.Unit);
+            this.StylesTab.Font = new Font(StaticLibrary.GetMainFont(), this.StylesTab.Font.Size, this.StylesTab.Font.Style, this.StylesTab.Font.Unit);
+            this.SampleText.Font = new Font(StaticLibrary.GetMainFont(), this.SampleText.Font.Size, this.SampleText.Font.Style, this.SampleText.Font.Unit );
+            this.StyleList.Font = new Font(StaticLibrary.GetMainFont(), this.StyleList.Font.Size, this.StyleList.Font.Style, this.StyleList.Font.Unit);
+
+            
         }
 
         private System.Windows.Forms.Panel MainWindowTitleBar;
@@ -416,12 +1621,77 @@ namespace PoE_Easy_Mapping
         private System.Windows.Forms.Panel StylesContent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox SamplePicture;
-        private System.Windows.Forms.TrackBar TrackBarAlpha;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer SampleRectContainer;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape SampleRect;
         private System.Windows.Forms.Panel SampleContent;
         private AlphaLabel SampleText;
-        private System.Windows.Forms.TrackBar TrackBarSize;
+        private Slider TrackBarFontSize;
+        private Slider TrackBarFontAlpha;
+        private System.Windows.Forms.ListBox StyleList;
+        private System.Windows.Forms.ComboBox ThemeSelectBox;
+        private System.Windows.Forms.GroupBox TextGroup;
+        private System.Windows.Forms.Label FontSizeLabel;
+        private System.Windows.Forms.Label FontAlphaLabel;
+        private System.Windows.Forms.Label FontColorLabel;
+        private System.Windows.Forms.TextBox FontColorTextBox;
+        private FlatButton TextColorPicker;
+        private FlatButton SetTextColor2;
+        private FlatButton SetTextColor5;
+        private FlatButton SetTextColor4;
+        private FlatButton SetTextColor3;
+        private FlatButton SetTextColor1;
+        private System.Windows.Forms.NumericUpDown FontSizeTextBox;
+        private System.Windows.Forms.NumericUpDown FontAlphaTextBox;
+        private AlphaLabel FontColorHashtag;
+        private System.Windows.Forms.Panel FontColor;
+        private FlatButton SetTextColor7;
+        private FlatButton SetTextColor6;
+        private System.Windows.Forms.GroupBox BorderGroup;
+        private FlatButton SetBorderColor7;
+        private FlatButton SetBorderColor6;
+        private System.Windows.Forms.Panel BorderColor;
+        private System.Windows.Forms.TextBox BorderColorTextBox;
+        private AlphaLabel BorderColorHashtag;
+        private System.Windows.Forms.NumericUpDown BorderAlphaTextBox;
+        private FlatButton BorderColorPicker;
+        private FlatButton SetBorderColor2;
+        private FlatButton SetBorderColor5;
+        private FlatButton SetBorderColor4;
+        private FlatButton SetBorderColor3;
+        private FlatButton SetBorderColor1;
+        private System.Windows.Forms.Label BorderAlphaLabel;
+        private System.Windows.Forms.Label BorderColorLabel;
+        private Slider TrackBarBorderAlpha;
+        private System.Windows.Forms.GroupBox BackgroundGroup;
+        private FlatButton SetBackgroundColor7;
+        private FlatButton SetBackgroundColor6;
+        private System.Windows.Forms.Panel BackgroundColor;
+        private System.Windows.Forms.TextBox BackgroundColorTextBox;
+        private AlphaLabel BackgroundColorHashtag;
+        private System.Windows.Forms.NumericUpDown BackgroundAlphaTextBox;
+        private FlatButton BackgroundColorPicker;
+        private FlatButton SetBackgroundColor2;
+        private FlatButton SetBackgroundColor5;
+        private FlatButton SetBackgroundColor4;
+        private FlatButton SetBackgroundColor3;
+        private FlatButton SetBackgroundColor1;
+        private System.Windows.Forms.Label BackgroundAlphaLabel;
+        private System.Windows.Forms.Label BackgroundColorLabel;
+        private Slider TrackBarBackgroundAlpha;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private FlatButton flatButton5;
+        private FlatButton flatButton4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox SampleSockets;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private FlatButton flatButton7;
+        private FlatButton flatButton6;
     }
 }
 

@@ -16,9 +16,15 @@ namespace PoE_Easy_Mapping
             BackColor = Color.DodgerBlue;
             ForeColor = Color.White;
             NormalBackColor = BackColor;
+            DisabledBackColor = Color.Gray;
         }
 
-        private Color CurrentBackColor = Color.DodgerBlue;
+        private Color currentBackColor = Color.DodgerBlue;
+        public Color CurrentBackColor
+        {
+            get { return currentBackColor; }
+            set { currentBackColor = value; if (!this.Enabled) currentBackColor = DisabledBackColor; Invalidate(); }
+        }
 
         private Color normalBackColor = Color.DodgerBlue;
         public Color NormalBackColor
@@ -39,6 +45,13 @@ namespace PoE_Easy_Mapping
         {
             get { return onClickBackColor; }
             set { onClickBackColor = value; Invalidate(); }
+        }
+
+        private Color disabledColor = Color.Gray;
+        public Color DisabledBackColor
+        {
+            get { return disabledColor; }
+            set { disabledColor = value; Invalidate(); }
         }
 
         protected override void OnMouseEnter(EventArgs e)
@@ -66,6 +79,20 @@ namespace PoE_Easy_Mapping
         {
             base.OnMouseUp(mevent);
             CurrentBackColor = BackColor;
+            Invalidate();
+        }
+
+        protected override void OnEnabledChanged(EventArgs e)
+        {
+            base.OnEnabledChanged(e);
+            if (this.Enabled)
+            {
+                CurrentBackColor = NormalBackColor;
+            }
+            else
+            {
+                CurrentBackColor = DisabledBackColor;
+            }
             Invalidate();
         }
 
