@@ -119,5 +119,17 @@
   <ItemGroup>
     <None Include="Resources\sc-weapons.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide-eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-eye1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

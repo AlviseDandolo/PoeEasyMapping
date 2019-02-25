@@ -63,6 +63,26 @@ namespace Gui_Malve.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide_eye {
+            get {
+                object obj = ResourceManager.GetObject("hide-eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hide_eye1 {
+            get {
+                object obj = ResourceManager.GetObject("hide-eye1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sc_amulet {
             get {
                 object obj = ResourceManager.GetObject("sc-amulet", resourceCulture);
@@ -136,6 +156,26 @@ namespace Gui_Malve.Properties {
         internal static System.Drawing.Bitmap sc_weapons {
             get {
                 object obj = ResourceManager.GetObject("sc-weapons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show_eye {
+            get {
+                object obj = ResourceManager.GetObject("show-eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show_eye1 {
+            get {
+                object obj = ResourceManager.GetObject("show-eye1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

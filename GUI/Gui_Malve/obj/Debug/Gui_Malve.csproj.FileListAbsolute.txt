@@ -11,3 +11,4 @@ C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csproj
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.exe
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.pdb
 C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.csprojAssemblyReference.cache
+C:\Users\Malve\Documents\PoeEasyMapping\GUI\Gui_Malve\obj\Debug\Gui_Malve.Form2.resources
