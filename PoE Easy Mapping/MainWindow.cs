@@ -18,6 +18,8 @@ using System.Xml;
 using System.Timers;
 using System.Text.RegularExpressions;
 using PoE_Easy_Mapping;
+using System.Resources;
+using WMPLib;
 
 namespace PoE_Easy_Mapping
 {
@@ -29,15 +31,43 @@ namespace PoE_Easy_Mapping
         static Panel SettingsContentRef, StylesContentRef;
         static List<Library.TabContentPair> MainTabList;
 
+        // Load the XML file from our project directory containing the purchase orders
+        private string configFilepath = Path.Combine(Directory.GetCurrentDirectory(), "config.xml");
         private XElement GlobalConfig;
-        private IEnumerable<XElement> Themes;
+        private IEnumerable<XElement> Styles;
+        private XElement CopiedStyle;
 
         static Bitmap SampleOriginalBgImage;
 
         public event EventHandler<TabClickEventArgs> MainTabClicked;
 
+        MapIconPanel mip;
+        BeamPanel bp;
+        SaveStylePanel ssp;
+
+        private string TempPath = Path.Combine(Path.GetTempPath(), @"PoEM\");
+        private string FilterPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\My Games\\Path of Exile\\EasyMapping.filter";
+        private string FilterSoundsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\My Games\\Path of Exile\\EasyMappingSounds\\";
+        private List<string> SoundList;
+        System.Media.SoundPlayer wavplayer;
+        WMPLib.WindowsMediaPlayer mp3player;
+
+        // Style info
+        private int Volume = 300;
+        private bool PlaySounds = true;
+
+        // Subpanel info
+        private bool ShowMapIcon = false;
+        private int MapIconSize = 1;
+        private string MapIconShape = "sphere";
+        private string MapIconColor = "blue";
+        private bool ShowBeam = false;
+        private string BeamColor = "blue";
+        private bool BeamTemporary = false;
+
         public MainWindow()
         {
+            StaticLibrary.InitAppFiles(TempPath);
             LoadData();
 
             StaticLibrary.AddFontFromResource(Properties.Resources.Fontin_SmallCaps);
@@ -54,54 +84,88 @@ namespace PoE_Easy_Mapping
                 new Library.TabContentPair{ Tab = SettingsTabRef, Content = SettingsContentRef },
                 new Library.TabContentPair{ Tab = StylesTabRef, Content = StylesContentRef }
             };
-            StaticLibrary.SetActiveTab(MainTabList, StylesTab);
+            StaticLibrary.SetActiveTab(MainTabList, SettingsTab);
             MainTabClicked += ClickedOnTab;
             // Main tabs end
 
             SampleOriginalBgImage = (Bitmap)SamplePicture.Image.Clone();
+            SampleRect.Parent.Parent = SamplePicture;
+            SampleRect.Location = new Point(SampleText.Location.X-4, SampleText.Location.Y-2);
             SampleText.Parent = SamplePicture;
+            SampleText.BringToFront();
             SampleSockets.Parent = SamplePicture;
+            SampleSockets.BringToFront();
 
-            StaticLibrary.StartLoadingTimer(300, AfterLoaded);
+            StaticLibrary.ReloadSoundOptions(ChangeSoundDropdown);
+
+            // Loading filter sound files start
+            if (!Directory.Exists(FilterSoundsFolder))
+            {
+                Directory.CreateDirectory(FilterSoundsFolder);
+            }
+            DirectoryInfo dir = new DirectoryInfo(FilterSoundsFolder);
+            var extensions = new[] { "*.mp3", "*.wav" };
+            IEnumerable<FileInfo> Files = extensions.SelectMany(ext => dir.GetFiles(ext));
+            SoundList = new List<string>();
+            foreach (FileInfo file in Files)
+            {
+                SoundList.Add(file.Name);
+                ChangeSoundDropdown.Items.Add(new ComboBoxItem(file.Name, FilterSoundsFolder+file.Name));
+            }
+            // Loading filter sound files end
+            
+            StaticLibrary.StartLoadingTimer(1000, AfterLoaded);
         }
 
         private void AfterLoaded(object sender, EventArgs e)
         {
-            PopulateComponents();
+            PopulateStyleList();
         }
 
-        private void PopulateComponents()
+        private void RefreshSample()
         {
-            if (ThemeSelectBox.InvokeRequired)
+            if (FontSizeTextBox.InvokeRequired)
             {
-                ReturningVoidDelegate d = new ReturningVoidDelegate(PopulateComponents);
+                ReturningVoidDelegate d = new ReturningVoidDelegate(RefreshSample);
+                this.Invoke(d, new object[] { });
+            }
+            else
+            {
+                ReloadSampleSize((int)FontSizeTextBox.Value);
+                ReloadSampleAlpha();
+            }
+        }
+
+        private void PopulateStyleList()
+        {
+            if (StyleList.InvokeRequired)
+            {
+                ReturningVoidDelegate d = new ReturningVoidDelegate(PopulateStyleList);
                 this.Invoke(d, new object[] {});
             }
             else
             {
-                foreach (XElement Theme in Themes)
+                StyleList.Items.Clear();
+                if (Styles.Count<XElement>() > 0)
                 {
-                    ThemeSelectBox.Items.Add(new ComboBoxItem(Theme.Attribute("Name").Value, Theme.Attribute("Name").Value));
+                    foreach (XElement Style in Styles)
+                    {
+                        StyleList.Items.Add(new ComboBoxItem(Style.Attribute("Name").Value, Style.Attribute("Name").Value));
+                    }
                 }
-                ThemeSelectBox.SelectedItem = ThemeSelectBox.Items[0];
             }
         }
 
         private void LoadData()
         {
-            // Load the XML file from our project directory containing the purchase orders
-            var filename = "config.xml";
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var configFilepath = Path.Combine(currentDirectory, filename);
-
-            //if (!File.Exists(configFilepath))
+            if (!File.Exists(configFilepath))
             {
                 StaticLibrary.CreateData(configFilepath);
             }
 
             GlobalConfig = XElement.Load($"{configFilepath}");
             
-            Themes = from theme in GlobalConfig.Descendants("Theme") select theme;
+            Styles = from style in GlobalConfig.Descendants("Style") select style;
         }
 
         // Main Tab Event Handling
@@ -129,6 +193,20 @@ namespace PoE_Easy_Mapping
 
             if (BorderAlpha < 0) BorderAlpha = 0; if (BorderAlpha > 255) BorderAlpha = 255;
             SampleRect.BorderColor = Color.FromArgb(BorderAlpha, SampleRect.BorderColor);
+            
+            SampleRect.Refresh();
+            //SampleRect.BringToFront();
+            SampleText.Refresh();
+            //SampleText.BringToFront();
+            SampleSockets.Refresh();
+            //SampleSockets.BringToFront();
+            /*
+            SampleText.Parent = SampleContent;
+            SampleText.Parent = SamplePicture;
+            SampleSockets.Refresh();
+            SampleSockets.Parent = SamplePicture;
+            SampleSockets.BringToFront();
+            */
         }
 
         // Size: int between 18 and 45
@@ -142,7 +220,7 @@ namespace PoE_Easy_Mapping
             // Rect height
             SampleRect.Height = (Size * 2 / 3) + 15;
             // Rect width
-            SampleRect.Width = (int)(SampleText.WidthCoefficient * SampleText.Font.Size * 1.1f) + 20;
+            SampleRect.Width = (int)(7.96986 * SampleText.Font.Size * 1.1f) + 20;
             // Text width
             SampleText.Width = SampleRect.Width - 4 - 20;
             
@@ -153,29 +231,62 @@ namespace PoE_Easy_Mapping
             // Sockets position
             SampleSockets.Location = new Point(SampleRect.Location.X + (SampleRect.Width - 20), SampleRect.Location.Y + (SampleRect.Height-16) / 2);
             SampleSockets.Visible = true;
-
-            SampleText.Parent = SampleContent;
-            SampleText.Refresh();
-            SampleRect.Refresh();
-            SampleText.Parent = SamplePicture;
-            ReloadSampleAlpha();
         }
 
         // ############### Interface Events START ###############
         private void StyleList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            XElement SelectedTheme = (from Themes in GlobalConfig.Descendants("Theme") where Themes.Attribute("Name").Value == ThemeSelectBox.SelectedItem.ToString() select Themes).First<XElement>();
-            IEnumerable<XElement> SelectedThemeBlockList = from Blocks in SelectedTheme.Descendants("Block") select Blocks;
+            if(((ListBox)sender).SelectedItem != null)
+            {
+                XElement SelectedStyle = (from Styles in GlobalConfig.Descendants("Style") where Styles.Attribute("Name").Value == ((ListBox)sender).SelectedItem.ToString() select Styles).First().Element("Params");
 
-            IEnumerable<XElement> BlockStyle = (from Blocks in SelectedThemeBlockList where Blocks.Attribute("Name").Value == StyleList.SelectedItem.ToString() select Blocks.Descendants("Style")).First();
+                SelectedStyleEditor.Visible = true;
 
-            FontSizeTextBox.Value = Decimal.Parse(BlockStyle.First().Attribute("FontSize").Value);
-            FontColorTextBox.Text = BlockStyle.First().Attribute("FontColor").Value;
-            FontAlphaTextBox.Value = Decimal.Parse(BlockStyle.First().Attribute("FontAlpha").Value);
-            BorderColorTextBox.Text = BlockStyle.First().Attribute("BorderColor").Value;
-            BorderAlphaTextBox.Value = Decimal.Parse(BlockStyle.First().Attribute("BorderAlpha").Value);
-            BackgroundColorTextBox.Text = BlockStyle.First().Attribute("BackgroundColor").Value;
-            BackgroundAlphaTextBox.Value = Decimal.Parse(BlockStyle.First().Attribute("BackgroundAlpha").Value);
+                FontSizeTextBox.Text = SelectedStyle.Attribute("FontSize").Value;
+                FontColorTextBox.Text = SelectedStyle.Attribute("FontColor").Value;
+                TrackBarFontAlpha.Value = 0;
+                TrackBarFontAlpha.Value = 255;
+                TrackBarFontAlpha.Value = Int32.Parse(SelectedStyle.Attribute("FontAlpha").Value);
+                BorderColorTextBox.Text = SelectedStyle.Attribute("BorderColor").Value;
+                TrackBarBorderAlpha.Value = 0;
+                TrackBarBorderAlpha.Value = 255;
+                TrackBarBorderAlpha.Value = Int32.Parse(SelectedStyle.Attribute("BorderAlpha").Value);
+                BackgroundColorTextBox.Text = SelectedStyle.Attribute("BackgroundColor").Value;
+                TrackBarBackgroundAlpha.Value = 0;
+                TrackBarBackgroundAlpha.Value = 255;
+                TrackBarBackgroundAlpha.Value = Int32.Parse(SelectedStyle.Attribute("BackgroundAlpha").Value);
+                UpdateMapIcon(Int32.Parse(SelectedStyle.Attribute("MinimapIconSize").Value) != 0, Int32.Parse(SelectedStyle.Attribute("MinimapIconSize").Value), SelectedStyle.Attribute("MinimapIconColor").Value, SelectedStyle.Attribute("MinimapIconShape").Value);
+                UpdateBeamIcon(bool.Parse(SelectedStyle.Attribute("LightBeamVisible").Value), SelectedStyle.Attribute("LightBeamColor").Value);
+                SetSoundWithoutPlaying(SelectedStyle.Attribute("AlertSound").Value, Int32.Parse(SelectedStyle.Attribute("AlertSoundVolume").Value));
+
+                SaveStyleButton.Enabled = true;
+                RevertStyleButton.Enabled = true;
+                CopyStyleButton.Enabled = true;
+                DeleteStyleButton.Enabled = true;
+            }
+        }
+
+        private void SetSoundWithoutPlaying(string sound, int volume)
+        {
+            PlaySounds = false;
+            Volume = volume;
+            var soundIndex = -1;
+            foreach (ComboBoxItem item in ChangeSoundDropdown.Items)
+            {
+                if( item.Value.ToString() == sound)
+                {
+                    soundIndex = ChangeSoundDropdown.Items.IndexOf(item);
+                }
+            }
+            if( soundIndex != -1 )
+            {
+                ChangeSoundDropdown.SelectedIndex = soundIndex;
+            }
+            else
+            {
+                ChangeSoundDropdown.SelectedIndex = 0;
+            }
+            PlaySounds = true;
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
@@ -236,8 +347,8 @@ namespace PoE_Easy_Mapping
             {
                 TrackBarFontAlpha.Value = newValue;
             }
-
-            ReloadSampleAlpha();
+            
+            RefreshSample();
         }
 
         private void BorderAlphaTextBox_ValueChanged(object sender, EventArgs e)
@@ -250,7 +361,7 @@ namespace PoE_Easy_Mapping
                 TrackBarBorderAlpha.Value = newValue;
             }
 
-            ReloadSampleAlpha();
+            RefreshSample();
         }
 
         private void BackgroundAlphaTextBox_ValueChanged(object sender, EventArgs e)
@@ -263,7 +374,7 @@ namespace PoE_Easy_Mapping
                 TrackBarBackgroundAlpha.Value = newValue;
             }
 
-            ReloadSampleAlpha();
+            RefreshSample();
         }
 
         private void TrackBarFontSize_ValueChanged(object sender, EventArgs e)
@@ -286,8 +397,8 @@ namespace PoE_Easy_Mapping
             {
                 TrackBarFontSize.Value = newValue;
             }
-
-            ReloadSampleSize(newValue);
+            
+            RefreshSample();
         }
 
         private void SetTextColor1_Click(object sender, EventArgs e)
@@ -365,7 +476,6 @@ namespace PoE_Easy_Mapping
             {
                 FontColorTextBox.Text = newValue;
                 SampleText.ForeColor = ColorTranslator.FromHtml(string.Concat("#", newValue));
-                ReloadSampleAlpha();
             }
         }
 
@@ -376,7 +486,6 @@ namespace PoE_Easy_Mapping
             {
                 BorderColorTextBox.Text = newValue;
                 SampleRect.BorderColor = ColorTranslator.FromHtml(string.Concat("#", newValue));
-                ReloadSampleAlpha();
             }
         }
 
@@ -387,7 +496,6 @@ namespace PoE_Easy_Mapping
             {
                 BackgroundColorTextBox.Text = newValue;
                 SampleText.BackColor = SampleRect.BackColor = ColorTranslator.FromHtml(string.Concat("#", newValue));
-                ReloadSampleAlpha();
             }
         }
 
@@ -511,7 +619,397 @@ namespace PoE_Easy_Mapping
                 FontColorTextBox.Text = newHexValue.Replace("#", "");
             }
         }
-        // ############### Interface Events END   ###############
 
+        private void ChangeIconButton_Click(object sender, EventArgs e)
+        {
+            mip = new MapIconPanel(this);
+            mip.Location = new Point();
+            mip.Size = StylesContent.Size;
+            mip.Init(MapIconSize, MapIconColor, MapIconShape);
+
+            StylesContent.Controls.Add(mip);
+            mip.BringToFront();
+            Panel actionPanel = (Panel)mip.Controls.Find("ActionPanel", true)[0];
+            actionPanel.Visible = true;
+        }
+
+        private void ChangeBeamButton_Click(object sender, EventArgs e)
+        {
+            bp = new BeamPanel(this);
+            bp.Location = new Point();
+            bp.Size = StylesContent.Size;
+            bp.Init(BeamColor);
+
+            StylesContent.Controls.Add(bp);
+            bp.BringToFront();
+            Panel actionPanel = (Panel)bp.Controls.Find("ActionPanel", true)[0];
+            actionPanel.Visible = true;
+        }
+
+        public void RemoveMapIconPanel()
+        {
+            StylesContent.Controls.Remove(mip);
+        }
+
+        public void RemoveBeamPanel()
+        {
+            StylesContent.Controls.Remove(bp);
+        }
+
+        public void RemoveSaveStylePanel()
+        {
+            StylesContent.Controls.Remove(ssp);
+        }
+
+        private void ChangeSoundDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string SelectedValue = ((ComboBoxItem)((ComboBox)sender).SelectedItem).Value.ToString();
+
+            if (PlaySounds)
+            {
+                PlaySound(SelectedValue);
+            }
+        }
+
+        private void PlaySound(string sound)
+        {
+            var SoundPath = "";
+
+            switch (sound)
+            {
+                case "0":
+                    return;
+                case "1":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound1.mp3");
+                    break;
+                case "2":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound2.mp3");
+                    break;
+                case "3":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound3.mp3");
+                    break;
+                case "4":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound4.mp3");
+                    break;
+                case "5":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound5.mp3");
+                    break;
+                case "6":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound6.mp3");
+                    break;
+                case "7":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound7.mp3");
+                    break;
+                case "8":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound8.mp3");
+                    break;
+                case "9":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound9.mp3");
+                    break;
+                case "10":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound10.mp3");
+                    break;
+                case "11":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound11.mp3");
+                    break;
+                case "12":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound12.mp3");
+                    break;
+                case "13":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound13.mp3");
+                    break;
+                case "14":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound14.mp3");
+                    break;
+                case "15":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound15.mp3");
+                    break;
+                case "16":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSound16.mp3");
+                    break;
+                case "shAlchemy":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShAlchemy.mp3");
+                    break;
+                case "shBlessed":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShBlessed.mp3");
+                    break;
+                case "shChaos":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShChaos.mp3");
+                    break;
+                case "shFusing":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShFusing.mp3");
+                    break;
+                case "shGeneral":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShGeneral.mp3");
+                    break;
+                case "shRegal":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShRegal.mp3");
+                    break;
+                case "shVaal":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShVaal.mp3");
+                    break;
+                case "shDivine":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShDivine.mp3");
+                    break;
+                case "shExalted":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShExalted.mp3");
+                    break;
+                case "shMirror":
+                    SoundPath = Path.Combine(TempPath, @"Sounds\AlertSoundShMirror.mp3");
+                    break;
+                default:
+                    SoundPath = sound;
+                    break;
+            }
+            
+            if (File.Exists(SoundPath))
+            {
+                if (SoundPath.EndsWith(".wav"))
+                {
+                    if(wavplayer == null) wavplayer = new System.Media.SoundPlayer();
+                    wavplayer.Stop();
+                    wavplayer.SoundLocation = SoundPath;
+                    wavplayer.Play();
+                }
+
+                if (SoundPath.EndsWith(".mp3"))
+                {
+                    if(mp3player == null) mp3player = new WMPLib.WindowsMediaPlayer();
+                    mp3player.controls.stop();
+                    mp3player.URL = SoundPath;
+                    mp3player.settings.volume = Volume / 12;
+                    mp3player.controls.play();
+                }
+            }
+        }
+
+        private void ChangeVolume_Click(object sender, EventArgs e)
+        {
+            switch (Volume)
+            {
+                case 0:
+                    SetVolume(40);
+                    break;
+                case 40:
+                    SetVolume(100);
+                    break;
+                case 100:
+                    SetVolume(200);
+                    break;
+                case 200:
+                    SetVolume(300);
+                    break;
+                case 300:
+                    SetVolume(0);
+                    break;
+            }
+
+            PlaySound( ((ComboBoxItem)(ChangeSoundDropdown.SelectedItem)).Value.ToString() );
+        }
+
+        private void SetVolume(int volume)
+        {
+            Volume = volume;
+            switch (Volume)
+            {
+                case 0:
+                    ChangeVolume.Image = Properties.Resources.VolumeMute;
+                    break;
+                case 40:
+                    ChangeVolume.Image = Properties.Resources.VolumeVeryLow;
+                    break;
+                case 100:
+                    ChangeVolume.Image = Properties.Resources.VolumeLow;
+                    break;
+                case 200:
+                    ChangeVolume.Image = Properties.Resources.VolumeMid;
+                    break;
+                case 300:
+                    ChangeVolume.Image = Properties.Resources.VolumeHigh;
+                    break;
+            }
+        }
+
+        public void UpdateMapIcon(bool visible, int size, string color, string shape)
+        {
+            ShowMapIcon = visible;
+            MapIconSize = size;
+            MapIconColor = color;
+            MapIconShape = shape;
+            if (ShowMapIcon)
+            {
+                ChangeIconButton.Image = (Image)Properties.Resources.ResourceManager.GetObject("Icon" + (MapIconShape.First().ToString().ToUpper() + MapIconShape.Substring(1)) + (MapIconColor.First().ToString().ToUpper() + MapIconColor.Substring(1)));
+            }
+            else
+            {
+                ChangeIconButton.Image = (Image)Properties.Resources.NoIcon;
+            }
+        }
+
+        public void UpdateBeamIcon(bool visible, string color, bool temporary = false)
+        {
+            ShowBeam = visible;
+            BeamColor = color;
+            BeamTemporary = temporary;
+            if (ShowBeam)
+            {
+                ChangeBeamButton.Image = (Image)Properties.Resources.ResourceManager.GetObject("IconBeam" + (BeamColor.First().ToString().ToUpper() + BeamColor.Substring(1)));
+            }
+            else
+            {
+                ChangeBeamButton.Image = (Image)Properties.Resources.NoIcon;
+            }
+        }
+
+        private void SaveStyleButton_Click(object sender, EventArgs e)
+        {
+            SaveStyle(StyleList.SelectedItem.ToString());
+        }
+
+        private void NewStyleButton_Click(object sender, EventArgs e)
+        {
+            ssp = new SaveStylePanel(this);
+            ssp.Location = new Point();
+            ssp.Size = StylesContent.Size;
+            ssp.Init();
+
+            StylesContent.Controls.Add(ssp);
+            ssp.BringToFront();
+            Panel actionPanel = (Panel)ssp.Controls.Find("ActionPanel", true)[0];
+            actionPanel.Visible = true;
+        }
+
+        private void StylesContent_VisibleChanged(object sender, System.EventArgs e)
+        {
+            SelectedStyleEditor.Visible = false;
+
+            SaveStyleButton.Enabled = false;
+            RevertStyleButton.Enabled = false;
+            CopyStyleButton.Enabled = false;
+            DeleteStyleButton.Enabled = false;
+
+            StyleList.ClearSelected();
+        }
+
+        public bool ValidNewStyleName(string styleName)
+        {
+            if( styleName != "")
+            {
+                foreach (XElement Style in Styles)
+                {
+                    if(Style.Attribute("Name").Value == styleName)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
+        private void RevertStyleButton_Click(object sender, EventArgs e)
+        {
+            var index = StyleList.SelectedIndex;
+            StyleList.SelectedItem = null;
+            StyleList.SelectedItem = StyleList.Items[index];
+        }
+
+        private void CopyStyleButton_Click(object sender, EventArgs e)
+        {
+            CopiedStyle = GlobalConfig.Descendants("Style").FirstOrDefault(m => m.Attribute("Name").Value == StyleList.SelectedItem.ToString()).Element("Params");
+            PasteStyleButton.Enabled = true;
+        }
+
+        private void PasteStyleButton_Click(object sender, EventArgs e)
+        {
+            if( CopiedStyle != null)
+            {
+                FontSizeTextBox.Text = CopiedStyle.Attribute("FontSize").Value;
+                FontColorTextBox.Text = CopiedStyle.Attribute("FontColor").Value;
+                TrackBarFontAlpha.Value = 0;
+                TrackBarFontAlpha.Value = 255;
+                TrackBarFontAlpha.Value = Int32.Parse(CopiedStyle.Attribute("FontAlpha").Value);
+                BorderColorTextBox.Text = CopiedStyle.Attribute("BorderColor").Value;
+                TrackBarBorderAlpha.Value = 0;
+                TrackBarBorderAlpha.Value = 255;
+                TrackBarBorderAlpha.Value = Int32.Parse(CopiedStyle.Attribute("BorderAlpha").Value);
+                BackgroundColorTextBox.Text = CopiedStyle.Attribute("BackgroundColor").Value;
+                TrackBarBackgroundAlpha.Value = 0;
+                TrackBarBackgroundAlpha.Value = 255;
+                TrackBarBackgroundAlpha.Value = Int32.Parse(CopiedStyle.Attribute("BackgroundAlpha").Value);
+                UpdateMapIcon(Int32.Parse(CopiedStyle.Attribute("MinimapIconSize").Value) != 0, Int32.Parse(CopiedStyle.Attribute("MinimapIconSize").Value), CopiedStyle.Attribute("MinimapIconColor").Value, CopiedStyle.Attribute("MinimapIconShape").Value);
+                UpdateBeamIcon(bool.Parse(CopiedStyle.Attribute("LightBeamVisible").Value), CopiedStyle.Attribute("LightBeamColor").Value);
+            }
+        }
+
+        private void DeleteStyleButton_Click(object sender, EventArgs e)
+        {
+            GlobalConfig.Descendants("Style").FirstOrDefault(m => m.Attribute("Name").Value == StyleList.SelectedItem.ToString()).Remove();
+            GlobalConfig.Save(configFilepath);
+
+            SelectedStyleEditor.Visible = false;
+
+            SaveStyleButton.Enabled = false;
+            RevertStyleButton.Enabled = false;
+            CopyStyleButton.Enabled = false;
+            DeleteStyleButton.Enabled = false;
+
+            Styles = from style in GlobalConfig.Descendants("Style") select style;
+            PopulateStyleList();
+        }
+
+        public void SaveStyleAsNew(string styleName)
+        {
+            XElement StylesContainer = (from stylesContainer in GlobalConfig.Descendants("Styles") select stylesContainer).First<XElement>();
+            StylesContainer.Add(new XElement("Style",
+                new XAttribute("Name", styleName),
+                new XElement("Params",
+                    new XAttribute("FontSize", 36),
+                    new XAttribute("FontColor", "#4682B4"),
+                    new XAttribute("FontAlpha", 255),
+                    new XAttribute("BackgroundColor", "#FFFFFF"),
+                    new XAttribute("BackgroundAlpha", 200),
+                    new XAttribute("BorderColor", "#4682B4"),
+                    new XAttribute("BorderAlpha", 255),
+                    new XAttribute("MinimapIconSize", 1),
+                    new XAttribute("MinimapIconColor", "Blue"),
+                    new XAttribute("MinimapIconShape", "Sphere"),
+                    new XAttribute("LightBeamVisible", false),
+                    new XAttribute("LightBeamColor", "Blue"),
+                    new XAttribute("LightBeamTemp", false),
+                    new XAttribute("AlertSound", "None"),
+                    new XAttribute("AlertSoundVolume", 300),
+                    new XAttribute("DropSound", false)
+                )
+            ));
+            GlobalConfig.Save(configFilepath);
+
+            Styles = from style in GlobalConfig.Descendants("Style") select style;
+            PopulateStyleList();
+        }
+
+        public void SaveStyle(string styleName)
+        {
+            XElement Style = GlobalConfig.Descendants("Style").FirstOrDefault(m => m.Attribute("Name").Value == styleName);
+            XElement StyleParams = Style.Element("Params");
+            StyleParams.Attribute("FontSize").Value = FontSizeTextBox.Value.ToString();
+            StyleParams.Attribute("FontColor").Value = "#" + FontColorTextBox.Text;
+            StyleParams.Attribute("FontAlpha").Value = FontAlphaTextBox.Value.ToString();
+            StyleParams.Attribute("BackgroundColor").Value = "#" + BackgroundColorTextBox.Text;
+            StyleParams.Attribute("BackgroundAlpha").Value = BackgroundAlphaTextBox.Value.ToString();
+            StyleParams.Attribute("BorderColor").Value = "#" + BorderColorTextBox.Text;
+            StyleParams.Attribute("BorderAlpha").Value = BorderAlphaTextBox.Value.ToString();
+            StyleParams.Attribute("MinimapIconSize").Value = MapIconSize.ToString();
+            StyleParams.Attribute("MinimapIconColor").Value = MapIconColor.Substring(0, 1).ToUpper() + MapIconColor.Substring(1);
+            StyleParams.Attribute("MinimapIconShape").Value = MapIconShape.Substring(0, 1).ToUpper() + MapIconShape.Substring(1);
+            StyleParams.Attribute("LightBeamVisible").Value = ShowBeam.ToString();
+            StyleParams.Attribute("LightBeamColor").Value = BeamColor.Substring(0, 1).ToUpper() + BeamColor.Substring(1);
+            StyleParams.Attribute("LightBeamTemp").Value = false.ToString();
+            StyleParams.Attribute("AlertSound").Value = ((ComboBoxItem)ChangeSoundDropdown.SelectedItem).Value.ToString();
+            StyleParams.Attribute("AlertSoundVolume").Value = Volume.ToString();
+            StyleParams.Attribute("DropSound").Value = false.ToString();
+            GlobalConfig.Save(configFilepath);
+        }
+        // ############### Interface Events END   ###############
     }
 }

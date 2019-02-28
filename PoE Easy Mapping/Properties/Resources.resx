@@ -142,8 +142,35 @@
   <data name="IconBeamYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconBeamYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconDiamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconDiamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconDiamondBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamondBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDiamondBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamondBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDiamondGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamondGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDiamondRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamondRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDiamondWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamondWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconDiamondYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconDiamondYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHexaBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHexaBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHexaRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHexaRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHexaWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHexaWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHexaYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHexaYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IconSphereBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconSphereBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,10 +190,166 @@
   <data name="IconSphereYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconSphereYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconSquareBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSquareBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSquareBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSquareBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSquareGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSquareGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSquareRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSquareRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSquareWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSquareWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconSquareYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconSquareYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStarBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStarBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStarBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStarBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStarGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStarGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStarRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStarRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStarWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStarWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconStarYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconStarYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconTriangleBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconTriangleBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconTriangleBrown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconTriangleBrown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconTriangleGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconTriangleGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconTriangleRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconTriangleRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconTriangleWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconTriangleWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconTriangleYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconTriangleYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PoEGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PoEGround.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SocketSample" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SocketSample.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHexaBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHexaBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconHexaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconHexaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlertSound1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound10.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound11.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound12.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound13.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound14.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound15.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound16.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound2.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound3.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound4.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound5.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound6.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound7.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound8.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSound9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSound9.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShAlchemy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShAlchemy.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShBlessed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShBlessed.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShChaos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShChaos.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShDivine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShDivine.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShExalted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShExalted.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShFusing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShFusing.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShGeneral.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShMirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShMirror.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShRegal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShRegal.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AlertSoundShVaal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertSoundShVaal.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="VolumeHigh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeHigh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeLow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeMid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeMid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeMute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeVeryLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VolumeVeryLow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -64,28 +64,7 @@ namespace PoE_Easy_Mapping
             XDocument config =
             new XDocument(
                 new XElement("Configuration",
-                    new XElement("Styles",
-                        new XElement("Style",
-                            new XAttribute("Name", "Fallback"),
-                            new XElement("Params",
-                                new XAttribute("FontSize", 30),
-                                new XAttribute("FontColor", "#CC0000"),
-                                new XAttribute("FontAlpha", 200),
-                                new XAttribute("BackgroundColor", "#000000"),
-                                new XAttribute("BackgroundAlpha", 100),
-                                new XAttribute("BorderColor", "#CC0000"),
-                                new XAttribute("BorderAlpha", 200),
-                                new XAttribute("MinimapIconSize", "0"),
-                                new XAttribute("MinimapIconColor", "Blue"),
-                                new XAttribute("MinimapIconShape", "Circle"),
-                                new XAttribute("LightBeamColor", "Blue"),
-                                new XAttribute("LightBeamTemp", false),
-                                new XAttribute("AlertSound", "1"),
-                                new XAttribute("AlertSoundVolume", "300"),
-                                new XAttribute("DropSound", false)
-                            )
-                        )
-                    )
+                    new XElement("Styles")
                 )
             );
             config.Save(path);
@@ -159,5 +138,72 @@ namespace PoE_Easy_Mapping
             return bmpOut;
         }
         // Utility end
+
+        public static void ReloadSoundOptions(ComboBox select)
+        {
+            select.Items.Clear();
+            select.Items.AddRange(new object[] {
+                new ComboBoxItem("None", "0"),
+                new ComboBoxItem("Sound 1", "1"),
+                new ComboBoxItem("Sound 2", "2"),
+                new ComboBoxItem("Sound 3", "3"),
+                new ComboBoxItem("Sound 4", "4"),
+                new ComboBoxItem("Sound 5", "5"),
+                new ComboBoxItem("Sound 6", "6"),
+                new ComboBoxItem("Sound 7", "7"),
+                new ComboBoxItem("Sound 8", "8"),
+                new ComboBoxItem("Sound 9", "9"),
+                new ComboBoxItem("Sound 10", "10"),
+                new ComboBoxItem("Sound 11", "11"),
+                new ComboBoxItem("Sound 12", "12"),
+                new ComboBoxItem("Sound 13", "13"),
+                new ComboBoxItem("Sound 14", "14"),
+                new ComboBoxItem("Sound 15", "15"),
+                new ComboBoxItem("Sound 16", "16"),
+                new ComboBoxItem("Orb of Alchemy", "shAlchemy"),
+                new ComboBoxItem("Blessed Orb", "shBlessed"),
+                new ComboBoxItem("Chaos Orb", "shChaos"),
+                new ComboBoxItem("Orb of Fusing", "shFusing"),
+                new ComboBoxItem("Orb of immense power", "shGeneral"),
+                new ComboBoxItem("Regal Orb", "shRegal"),
+                new ComboBoxItem("Vaal Orb", "shVaal"),
+                new ComboBoxItem("Divine Orb", "shDivine"),
+                new ComboBoxItem("Exalted Orb", "shExalted"),
+                new ComboBoxItem("Mirror of Kalandra", "shMirror")
+            });
+            select.SelectedItem = select.Items[0];
+        }
+        
+        public static void InitAppFiles(string TempPath)
+        {
+            var path = Path.Combine(TempPath, @"Sounds\");
+            if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound1.mp3"), Properties.Resources.AlertSound1);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound2.mp3"), Properties.Resources.AlertSound2);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound3.mp3"), Properties.Resources.AlertSound3);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound4.mp3"), Properties.Resources.AlertSound4);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound5.mp3"), Properties.Resources.AlertSound5);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound6.mp3"), Properties.Resources.AlertSound6);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound7.mp3"), Properties.Resources.AlertSound7);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound8.mp3"), Properties.Resources.AlertSound8);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound9.mp3"), Properties.Resources.AlertSound9);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound10.mp3"), Properties.Resources.AlertSound10);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound11.mp3"), Properties.Resources.AlertSound11);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound12.mp3"), Properties.Resources.AlertSound12);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound13.mp3"), Properties.Resources.AlertSound13);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound14.mp3"), Properties.Resources.AlertSound14);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound15.mp3"), Properties.Resources.AlertSound15);
+            File.WriteAllBytes(Path.Combine(path, "AlertSound16.mp3"), Properties.Resources.AlertSound16);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShAlchemy.mp3"), Properties.Resources.AlertSoundShAlchemy);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShBlessed.mp3"), Properties.Resources.AlertSoundShBlessed);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShChaos.mp3"), Properties.Resources.AlertSoundShChaos);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShFusing.mp3"), Properties.Resources.AlertSoundShFusing);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShGeneral.mp3"), Properties.Resources.AlertSoundShGeneral);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShRegal.mp3"), Properties.Resources.AlertSoundShRegal);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShVaal.mp3"), Properties.Resources.AlertSoundShVaal);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShDivine.mp3"), Properties.Resources.AlertSoundShDivine);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShExalted.mp3"), Properties.Resources.AlertSoundShExalted);
+            File.WriteAllBytes(Path.Combine(path, "AlertSoundShMirror.mp3"), Properties.Resources.AlertSoundShMirror);
+        }
     }
 }

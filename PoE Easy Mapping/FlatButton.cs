@@ -99,7 +99,13 @@ namespace PoE_Easy_Mapping
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
-            pevent.Graphics.FillRectangle(new SolidBrush(CurrentBackColor), 0, 0, Width, Height);
+            if (FlatAppearance.BorderSize > 0)
+            {
+                pevent.Graphics.FillRectangle(new SolidBrush(FlatAppearance.BorderColor), 0, 0, Width, Height);
+                pevent.Graphics.FillRectangle(new SolidBrush(CurrentBackColor), FlatAppearance.BorderSize, FlatAppearance.BorderSize, Width - FlatAppearance.BorderSize*2, Height - FlatAppearance.BorderSize*2);
+            } else {
+                pevent.Graphics.FillRectangle(new SolidBrush(CurrentBackColor), 0, 0, Width, Height);
+            }
             TextFormatFlags flags = TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter;
             TextRenderer.DrawText(pevent.Graphics, Text, Font, new Point(Width + 3, Height / 2), ForeColor, flags);
         }

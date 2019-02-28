@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackgroundPlayer.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
+        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
+        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAA7gAAANQA
+        AAAL
+</value>
+  </data>
   <metadata name="TrayBarIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -4635,7 +4646,7 @@
         //////////////////////////////////////////////////8=
 </value>
   </data>
-  <data name="TextColorPicker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BackgroundColorPicker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK4AAABXCAIAAAAS8+loAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAe+SURBVHhe7dJBi5YFFIbhb9GmRYsWbYQiQmohFCKi
@@ -4713,7 +4724,7 @@
         IeQSMeCmVsI11hrXFfcVQi4RA25qJVxjrXEd8a4D/wMD0pQesoZgRAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="BackgroundColorPicker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TextColorPicker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK4AAABXCAIAAAAS8+loAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAe+SURBVHhe7dJBi5YFFIbhb9GmRYsWbYQiQmohFCKi
@@ -4750,6 +4761,24 @@
         WGtcV9xXCLlEDLiplXCNtcZ1xbMfd+2ad0C9oF5TJ9WgTqmz6gv1lfpx0Vfqi7Gz6pQa1En1mnpBHVCj
         FYqn4BIx4KZWwjXWGtcV9xVCLhEDbmolXGOtcV1xXyHkEjHgplbCNdYa1xX3FUIuEQNuaiVcY61xXXFf
         IeQSMeCmVsI11hrXFfcVQi4RA25qJVxjrXEd8a4D/wMD0pQesoZgRAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ChangeVolume.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAK8SURBVEhLtZW7axRRFIcnGF+pLOIDF2PAqIkYELSw
+        UbCzEDU+QBQW0gTB0j9BxE6IQUEQLAxiZ5dCENHKIFokEiJCIGJe+8g+XHaTze6O3289G2Yms5uN0eJj
+        5sy553xzZ+7ccVzX/e+EXtwIlUrFWVlZ6YBW0PkaQgs3wtLS0tnZ2dnK3NzcF7gEThAnk8k0Qzvcp2Fv
+        iOQQkk80c40nsE3NazgMWI92GJ2ZmXERPQpKisWiMz8/L/oZk2CsRK+9olVbHdphFFwVZ7NZnySXy91M
+        pVL3EonEfnDy+XwPx+8memw9GkpWBcIkg15JPB7/rBlCbGFh4Uq5XHaWl5ePMquE1Z2HuhKfQIRJuOsu
+        BC89Yy5qRsijNhsthq1q2AuXoc+OV8EnEEEJd72bR6WGDrO4a2MI4/ughXMJVHtBkrQFDfFKWFFnuPaL
+        5iOwRyLiYY3h/MHi4qIWzB2rHVaybEFDApJjxNOWG4nFYurTDWWkU4zbQr7H8lNKFi1oSECiO93L9W/K
+        ITnBUb0mkWipHyC/kzgJpc1IVPtUOSR6j4o/mOS45X8ovxnJLq5/VQ7JSY7qNWGSg+R3EGspV2dSgtDG
+        XgKSw8QTlnuLpIVjF5SQTDOulfwRYu1p05LkYU3TIAHJOeISH917iNjqeqZxxA/1rZAfsNpXSp6GqId+
+        GIO6EsEW3uH5Tm7bmDTopavvR6vtUxBGBHyioERwxxG++OrLF8huaDkzm+t2bRy2hwlq+ERhEmZR3Z3J
+        ZRkT1Q+MnaATGWG1TjvIurvwqihMQjyQTCYHtYdpBuzCnZyPayw1z61HU/+TCIzpjlmaQ16J8PxPrjHu
+        J0jwBvQx/pGk0+lmiPCShwqFwqmghJWmb+IdzaqPFV5Am5rX8BX8Dbac1XwSbnmb1wgt3Ah62TyybmjT
+        owsjtPDf4jq/AZaVvhhHAyuRAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>
